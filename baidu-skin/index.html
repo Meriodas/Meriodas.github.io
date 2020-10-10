@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index.html</title>
+	<style>
+		/*重置所有标签的padding, margin样式*/
+		* {
+			padding:0;
+			margin:0;
+		}
+		ul {
+			list-style: none;
+		}
+		html , body {
+			width: 100%;
+			height: 100%;
+		}
+		body {
+			background: url('./1.jpg') no-repeat;
+            background-size: cover;
+		}
+
+		.layout .header {/* 通栏: 占满浏览器一整行的容器*/
+			/*width:1050px;*/
+			width:100%;
+			margin: 0 auto;
+			background-color:rgba(255,255,255,0.5);
+			height: 150px;
+			overflow: hidden;/* header */
+		}
+		.layout .header ul {  /* 版心 : 水平居中的容器   */
+			width:1050px;
+			height: 100px;
+			margin: 25px auto;/* 外边距塌陷问题*/
+		}
+		.layout .header ul li {
+			width:200px;
+			height: 100px;
+			margin: 0 5px;
+			float: left;
+		}
+		.layout .header ul li img {
+			width:200px;
+			height: 100px;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="layout">
+		<div class="header" id="headerId">
+			<ul>
+				<li><img src="./1.jpg" alt=""></li>
+				<li><img src="./2.jpg" alt=""></li>
+				<li><img src="./3.jpg" alt=""></li>
+				<li><img src="./4.jpg" alt=""></li>
+				<li><img src="./5.jpg" alt=""></li>
+			</ul>
+		</div>
+	</div>
+	
+
+
+	<!-- 书写javascript -->
+	<script type="text/javascript">
+		// 1.0 获取相关的元素
+		// var header = document.getElementsByClassName('header')[0];
+		var header = document.getElementById('headerId');
+		var aLi = header.getElementsByTagName('li');
+		// 备注:获取body标签,跟其他元素的获取方法不一样
+		var bd = document.body;
+		// htmlCollection[div.header]
+		console.log(aLi)
+		// 2.0 事件的绑定
+		aLi[0].onmouseenter = function(){
+			// 3.0 书写驱动的程序
+			bd.style.backgroundImage = "url(./1.jpg)";
+		}
+		// 2.0 事件的绑定
+		aLi[1].onmouseenter = function(){
+			// 3.0 书写驱动的程序
+			bd.style.backgroundImage = "url(./2.jpg)";
+		}
+		// 2.0 事件的绑定
+		aLi[2].onmouseenter = function(){
+			// 3.0 书写驱动的程序
+			bd.style.backgroundImage = "url(./3.jpg)";
+		}
+		// 2.0 事件的绑定
+		aLi[3].onmouseenter = function(){
+			// 3.0 书写驱动的程序
+			bd.style.backgroundImage = "url(./4.jpg)";
+		}
+		// 2.0 事件的绑定
+		aLi[4].onmouseenter = function(){
+			// 3.0 书写驱动的程序
+			bd.style.backgroundImage = "url(./5.jpg)";
+		}
+
+
+		
+
+	</script>
+</body>
+</html>
