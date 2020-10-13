@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BaiduSkin</title>
+    <link rel="stylesheet" type="text/css" href="./css/baiduskin.css"/>
+	<style type="text/css">
+	</style>
+</head>
+<body>
+
+	<div class="layout">
+		<div class="header" id="headerId">
+			<ul>
+				<li><img src="./img/1.jpg" alt=""></li>
+				<li><img src="./img/2.jpg" alt=""></li>
+				<li><img src="./img/3.jpg" alt=""></li>
+				<li><img src="./img/4.jpg" alt=""></li>
+				<li><img src="./img/5.jpg" alt=""></li>
+			</ul>
+		</div>
+	</div>
+	
+
+
+	<!-- 书写javascript -->
+	<script type="text/javascript">
+		// 1.0 获取相关的元素
+		// var header = document.getElementsByClassName('header')[0];
+		var header = document.getElementById('headerId');
+		var aLi = header.getElementsByTagName('li');
+		// 备注:获取body标签,跟其他元素的获取方法不一样
+		var bd = document.body;
+		// htmlCollection[div.header]
+		console.log(aLi)
+		// 2.0 事件的绑定
+		aLi[0].onmouseenter = function(){
+			// 3.0 书写驱动的程序
+			bd.style.backgroundImage = "url(./img/1.jpg)";
+		}
+		// 2.0 事件的绑定
+		aLi[1].onmouseenter = function(){
+			// 3.0 书写驱动的程序
+			bd.style.backgroundImage = "url(./img/2.jpg)";
+		}
+		// 2.0 事件的绑定
+		aLi[2].onmouseenter = function(){
+			// 3.0 书写驱动的程序
+			bd.style.backgroundImage = "url(./img/3.jpg)";
+		}
+		// 2.0 事件的绑定
+		aLi[3].onmouseenter = function(){
+			// 3.0 书写驱动的程序
+			bd.style.backgroundImage = "url(./img/4.jpg)";
+		}
+		// 2.0 事件的绑定
+		aLi[4].onmouseenter = function(){
+			// 3.0 书写驱动的程序
+			bd.style.backgroundImage = "url(./img/5.jpg)";
+		}
+
+
+		
+
+	</script>
+</body>
+</html>

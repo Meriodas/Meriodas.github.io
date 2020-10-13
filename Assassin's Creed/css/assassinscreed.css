@@ -1,0 +1,406 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.fr {
+  float: right;
+}
+.fl {
+  float: left;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.auto-img {
+  width: 100%;
+  display: block;
+}
+.AssassinsCreed {
+  position: relative;
+}
+.AssassinsCreed .nav {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  z-index: 2;
+}
+.AssassinsCreed .nav .nav-bar {
+  height: 120px;
+  flex: 4;
+}
+.AssassinsCreed .nav .nav-bar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.AssassinsCreed .nav .nav-bar ul li {
+  flex: 1;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.AssassinsCreed .nav .nav-bar ul li:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.AssassinsCreed .nav .nav-bar ul li a {
+  text-decoration: none;
+  color: white;
+}
+.AssassinsCreed .nav .leftlogo {
+  padding-left: 5%;
+}
+.AssassinsCreed .nav .leftlogo,
+.AssassinsCreed .nav .rightlogo {
+  width: 120px;
+  height: 120px;
+  display: flex;
+}
+.AssassinsCreed .nav .leftlogo a,
+.AssassinsCreed .nav .rightlogo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.AssassinsCreed #app {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.AssassinsCreed .carousel {
+  position: absolute;
+  width: 1000%;
+  height: 100%;
+}
+.AssassinsCreed .carousel li {
+  display: inline-block;
+  width: 10%;
+  height: 100%;
+}
+.AssassinsCreed .carousel li img {
+  width: 100%;
+  height: 100%;
+}
+.AssassinsCreed .game {
+  width: 100%;
+}
+.AssassinsCreed .game .ADS,
+.AssassinsCreed .game .QS,
+.AssassinsCreed .game .XX,
+.AssassinsCreed .game .BNS,
+.AssassinsCreed .game .DGM,
+.AssassinsCreed .game .PB,
+.AssassinsCreed .game .HQ,
+.AssassinsCreed .game .NUM3,
+.AssassinsCreed .game .QSL,
+.AssassinsCreed .game .XDH,
+.AssassinsCreed .game .NUM2,
+.AssassinsCreed .game .NUM1 {
+  padding: 3%;
+  display: flex;
+}
+.AssassinsCreed .game .ADS .left-show,
+.AssassinsCreed .game .QS .left-show,
+.AssassinsCreed .game .XX .left-show,
+.AssassinsCreed .game .BNS .left-show,
+.AssassinsCreed .game .DGM .left-show,
+.AssassinsCreed .game .PB .left-show,
+.AssassinsCreed .game .HQ .left-show,
+.AssassinsCreed .game .NUM3 .left-show,
+.AssassinsCreed .game .QSL .left-show,
+.AssassinsCreed .game .XDH .left-show,
+.AssassinsCreed .game .NUM2 .left-show,
+.AssassinsCreed .game .NUM1 .left-show {
+  width: 270px;
+}
+.AssassinsCreed .game .ADS .left-show .left,
+.AssassinsCreed .game .QS .left-show .left,
+.AssassinsCreed .game .XX .left-show .left,
+.AssassinsCreed .game .BNS .left-show .left,
+.AssassinsCreed .game .DGM .left-show .left,
+.AssassinsCreed .game .PB .left-show .left,
+.AssassinsCreed .game .HQ .left-show .left,
+.AssassinsCreed .game .NUM3 .left-show .left,
+.AssassinsCreed .game .QSL .left-show .left,
+.AssassinsCreed .game .XDH .left-show .left,
+.AssassinsCreed .game .NUM2 .left-show .left,
+.AssassinsCreed .game .NUM1 .left-show .left {
+  color: #454545;
+  font-family: "微软雅黑";
+  font-weight: bold;
+  font-size: 12px;
+  width: 98px;
+  padding-top: 5px;
+}
+.AssassinsCreed .game .ADS .left-show .right,
+.AssassinsCreed .game .QS .left-show .right,
+.AssassinsCreed .game .XX .left-show .right,
+.AssassinsCreed .game .BNS .left-show .right,
+.AssassinsCreed .game .DGM .left-show .right,
+.AssassinsCreed .game .PB .left-show .right,
+.AssassinsCreed .game .HQ .left-show .right,
+.AssassinsCreed .game .NUM3 .left-show .right,
+.AssassinsCreed .game .QSL .left-show .right,
+.AssassinsCreed .game .XDH .left-show .right,
+.AssassinsCreed .game .NUM2 .left-show .right,
+.AssassinsCreed .game .NUM1 .left-show .right {
+  color: #454545;
+  font-family: "微软雅黑";
+  font-size: 12px;
+  padding-top: 5px;
+}
+.AssassinsCreed .game .ADS .right-show,
+.AssassinsCreed .game .QS .right-show,
+.AssassinsCreed .game .XX .right-show,
+.AssassinsCreed .game .BNS .right-show,
+.AssassinsCreed .game .DGM .right-show,
+.AssassinsCreed .game .PB .right-show,
+.AssassinsCreed .game .HQ .right-show,
+.AssassinsCreed .game .NUM3 .right-show,
+.AssassinsCreed .game .QSL .right-show,
+.AssassinsCreed .game .XDH .right-show,
+.AssassinsCreed .game .NUM2 .right-show,
+.AssassinsCreed .game .NUM1 .right-show {
+  flex: 1;
+  padding: 0 40px;
+}
+.AssassinsCreed .game .ADS .right-show h2,
+.AssassinsCreed .game .QS .right-show h2,
+.AssassinsCreed .game .XX .right-show h2,
+.AssassinsCreed .game .BNS .right-show h2,
+.AssassinsCreed .game .DGM .right-show h2,
+.AssassinsCreed .game .PB .right-show h2,
+.AssassinsCreed .game .HQ .right-show h2,
+.AssassinsCreed .game .NUM3 .right-show h2,
+.AssassinsCreed .game .QSL .right-show h2,
+.AssassinsCreed .game .XDH .right-show h2,
+.AssassinsCreed .game .NUM2 .right-show h2,
+.AssassinsCreed .game .NUM1 .right-show h2 {
+  color: #CDA279;
+  font-style: italic;
+  padding-bottom: 8px;
+}
+.AssassinsCreed .game .ADS .right-show h3,
+.AssassinsCreed .game .QS .right-show h3,
+.AssassinsCreed .game .XX .right-show h3,
+.AssassinsCreed .game .BNS .right-show h3,
+.AssassinsCreed .game .DGM .right-show h3,
+.AssassinsCreed .game .PB .right-show h3,
+.AssassinsCreed .game .HQ .right-show h3,
+.AssassinsCreed .game .NUM3 .right-show h3,
+.AssassinsCreed .game .QSL .right-show h3,
+.AssassinsCreed .game .XDH .right-show h3,
+.AssassinsCreed .game .NUM2 .right-show h3,
+.AssassinsCreed .game .NUM1 .right-show h3 {
+  font-family: "微软雅黑";
+  font-size: 16px;
+  padding: 8px 0 16px;
+}
+.AssassinsCreed .game .ADS .right-show p,
+.AssassinsCreed .game .QS .right-show p,
+.AssassinsCreed .game .XX .right-show p,
+.AssassinsCreed .game .BNS .right-show p,
+.AssassinsCreed .game .DGM .right-show p,
+.AssassinsCreed .game .PB .right-show p,
+.AssassinsCreed .game .HQ .right-show p,
+.AssassinsCreed .game .NUM3 .right-show p,
+.AssassinsCreed .game .QSL .right-show p,
+.AssassinsCreed .game .XDH .right-show p,
+.AssassinsCreed .game .NUM2 .right-show p,
+.AssassinsCreed .game .NUM1 .right-show p {
+  padding-bottom: 4px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #454545;
+}
+.AssassinsCreed .game .ADS .right-show .button,
+.AssassinsCreed .game .QS .right-show .button,
+.AssassinsCreed .game .XX .right-show .button,
+.AssassinsCreed .game .BNS .right-show .button,
+.AssassinsCreed .game .DGM .right-show .button,
+.AssassinsCreed .game .PB .right-show .button,
+.AssassinsCreed .game .HQ .right-show .button,
+.AssassinsCreed .game .NUM3 .right-show .button,
+.AssassinsCreed .game .QSL .right-show .button,
+.AssassinsCreed .game .XDH .right-show .button,
+.AssassinsCreed .game .NUM2 .right-show .button,
+.AssassinsCreed .game .NUM1 .right-show .button {
+  width: 600px;
+  display: flex;
+  padding: 20px 0;
+}
+.AssassinsCreed .game .ADS .right-show button,
+.AssassinsCreed .game .QS .right-show button,
+.AssassinsCreed .game .XX .right-show button,
+.AssassinsCreed .game .BNS .right-show button,
+.AssassinsCreed .game .DGM .right-show button,
+.AssassinsCreed .game .PB .right-show button,
+.AssassinsCreed .game .HQ .right-show button,
+.AssassinsCreed .game .NUM3 .right-show button,
+.AssassinsCreed .game .QSL .right-show button,
+.AssassinsCreed .game .XDH .right-show button,
+.AssassinsCreed .game .NUM2 .right-show button,
+.AssassinsCreed .game .NUM1 .right-show button {
+  border: none;
+  outline: none;
+}
+.AssassinsCreed .game .ADS .right-show a,
+.AssassinsCreed .game .QS .right-show a,
+.AssassinsCreed .game .XX .right-show a,
+.AssassinsCreed .game .BNS .right-show a,
+.AssassinsCreed .game .DGM .right-show a,
+.AssassinsCreed .game .PB .right-show a,
+.AssassinsCreed .game .HQ .right-show a,
+.AssassinsCreed .game .NUM3 .right-show a,
+.AssassinsCreed .game .QSL .right-show a,
+.AssassinsCreed .game .XDH .right-show a,
+.AssassinsCreed .game .NUM2 .right-show a,
+.AssassinsCreed .game .NUM1 .right-show a {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.AssassinsCreed .game .ADS .right-show .orangeBtn,
+.AssassinsCreed .game .QS .right-show .orangeBtn,
+.AssassinsCreed .game .XX .right-show .orangeBtn,
+.AssassinsCreed .game .BNS .right-show .orangeBtn,
+.AssassinsCreed .game .DGM .right-show .orangeBtn,
+.AssassinsCreed .game .PB .right-show .orangeBtn,
+.AssassinsCreed .game .HQ .right-show .orangeBtn,
+.AssassinsCreed .game .NUM3 .right-show .orangeBtn,
+.AssassinsCreed .game .QSL .right-show .orangeBtn,
+.AssassinsCreed .game .XDH .right-show .orangeBtn,
+.AssassinsCreed .game .NUM2 .right-show .orangeBtn,
+.AssassinsCreed .game .NUM1 .right-show .orangeBtn {
+  width: 250px;
+  height: 50px;
+  background: #CDA279;
+  color: #FFFFFF;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+.AssassinsCreed .game hr {
+  width: 90%;
+  min-width: 1200px;
+  color: #454545;
+  margin-left: 5%;
+}
+.AssassinsCreed .news {
+  min-width: 1500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.AssassinsCreed .news .news-box {
+  width: 90%;
+  border: 30px solid #CDA279;
+}
+.AssassinsCreed .news .news-box h2 {
+  background-color: #CDA279;
+  color: white;
+  text-align: center;
+  margin: 20px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+.AssassinsCreed .news .news-box .news-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.AssassinsCreed .news .news-box .news-content .item-news {
+  width: 300px;
+  min-height: 365px;
+  min-width: 300px;
+  border: 1px solid black;
+  margin: 10px 20px;
+  position: relative;
+}
+.AssassinsCreed .news .news-box .news-content .item-news .content {
+  height: 180px;
+}
+.AssassinsCreed .news .news-box .news-content .item-news .time {
+  color: #000000;
+}
+.AssassinsCreed .news .news-box .news-content .item-news .title {
+  color: #CDA279;
+  font-size: 20px;
+  font-weight: bold;
+}
+.AssassinsCreed .news .news-box .news-content .item-news .mes {
+  color: #454545;
+  font-size: 14px;
+}
+.AssassinsCreed .news .news-box .news-content .item-news .more {
+  width: 300px;
+  display: block;
+  height: 50px;
+  background-color: #CDA279;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.AssassinsCreed .videos {
+  padding-top: 48px;
+}
+.AssassinsCreed .footer {
+  width: 100%;
+  margin-top: -5px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.AssassinsCreed .footer .icon {
+  padding: 60px 40px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.AssassinsCreed .footer .icon .ico {
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  padding: 50px 40px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.AssassinsCreed .footer .icon .ico a {
+  padding: 0 30px;
+}
+.AssassinsCreed .linkmore h2 {
+  color: white;
+  background-color: #000;
+  text-align: center;
+}
+.AssassinsCreed .linkmore .other {
+  padding: 32px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.AssassinsCreed .linkmore .other a {
+  flex: 1;
+  display: block;
+  width: 200px;
+  text-decoration: none;
+  color: #999999;
+}
+.AssassinsCreed .linkmore .other a:hover {
+  color: white;
+}
