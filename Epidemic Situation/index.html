@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Epidemic Situation</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="contnet">
+            <h2 style="text-align: center; font-weight: bolder; color: red;">抗击新冠肺炎</h2>
+            <div class="row">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li style="text-align: center;" role="presentation" class="active col-xs-4"><a href="#home" aria-controls="home" role="tab"
+                            data-toggle="tab">国内疫情</a></li>
+                    <li style="text-align: center; role="presentation" class="col-xs-4"><a href="#profile" aria-controls="profile" role="tab"
+                            data-toggle="tab">海外疫情</a></li>
+                    <li style="text-align: center; role="presentation" class="col-xs-4"><a href="#messages" aria-controls="messages" role="tab"
+                            data-toggle="tab">全球疫情</a></li>
+                </ul>
+            </div>
+
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active civil" id="home">
+                    <div class="row top_box">
+                        <!-- <div class="box col-xs-4">
+                            <h4>累计确诊</h4>
+                            <h2>86660</h2>
+                            <p>较上日<span>+169</span></p>
+                        </div>
+                        <div class="box col-xs-4">
+                            <h4>累计治愈</h4>
+                            <h2>86660</h2>
+                            <p>较上日<span>+169</span></p>
+                        </div>
+                        <div class="box col-xs-4">
+                            <h4>累计死亡</h4>
+                            <h2>86660</h2>
+                            <p>较上日<span>+169</span></p>
+                        </div>
+                        <div class="box col-xs-4">
+                            <h4>现有确诊</h4>
+                            <h2>86660</h2>
+                            <p>较上日<span>+169</span></p>
+                        </div>
+                        <div class="box col-xs-4">
+                            <h4>境外输入确诊</h4>
+                            <h2>86660</h2>
+                            <p>较上日<span>+169</span></p>
+                        </div>
+                        <div class="box col-xs-4">
+                            <h4>现有疑似</h4>
+                            <h2>86660</h2>
+                            <p>较上日<span>+169</span></p>
+                        </div> -->
+                    </div>
+                    <div class="civil_details">
+                        <table border="0">
+                            <thead>
+                                <tr>
+                                    <th>地区</th>
+                                    <th>现有确诊</th>
+                                    <th>累计确诊</th>
+                                    <th>死亡</th>
+                                    <th>治愈</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+
+                </div>
+                <div role="tabpanel" class="tab-pane overseas" id="profile">
+                    <div class="overseas_details">
+                        <table border="0">
+                            <thead>
+                                <tr>
+                                    <th>地区</th>
+                                    <th>现有确诊</th>
+                                    <th>累计确诊</th>
+                                    <th>死亡</th>
+                                    <th>治愈</th>
+                                </tr>
+                            </thead>
+                        </table>
+
+                    </div>
+
+
+                </div>
+                <div role="tabpanel" class="tab-pane civil" id="messages">
+					<div class="row top_box ">
+					    <div class="box col-xs-4">
+					        <h4>累计确诊</h4>
+					        <h2>86660</h2>
+					        <p>较上日<span>+169</span></p>
+					    </div>
+					    <div class="box col-xs-4">
+					        <h4>累计治愈</h4>
+					        <h2>86660</h2>
+					        <p>较上日<span>+169</span></p>
+					    </div>
+					    <div class="box col-xs-4">
+					        <h4>累计死亡</h4>
+					        <h2>86660</h2>
+					        <p>较上日<span>+169</span></p>
+					    </div>
+					    <div class="box col-xs-4">
+					        <h4>现有确诊</h4>
+					        <h2>86660</h2>
+					        <p>较上日<span>+169</span></p>
+					    </div>
+					    <div class="box col-xs-4">
+					        <h4>境外输入确诊</h4>
+					        <h2>86660</h2>
+					        <p>较上日<span>+169</span></p>
+					    </div>
+					    <div class="box col-xs-4">
+					        <h4>现有疑似</h4>
+					        <h2>86660</h2>
+					        <p>较上日<span>+169</span></p>
+					    </div>
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+</body>
+<script>
+    $('#myTabs a').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show');
+    })
+
+
+    //获取元素的方法
+    function query(selector) {
+        return document.querySelectorAll(selector);
+    }
+
+    //创建元素的方法
+    function create(tagName) {
+        return document.createElement(tagName);
+    }
+
+    let topbox = query(".top_box")[0];
+	let topboxs = query(".top_box")[1];
+	console.log(topbox);
+	console.log(topboxs);
+
+    let civildetails = query(".civil_details")[0];
+
+    let btns = query(".civil .btn-lis button");
+    // query("button")[0].onclick = function () {
+
+	
+	class Http {
+	
+	    // get请求
+	    get(url) {
+	        return new Promise((resolved, rejected) => {
+	
+	            // 创建ajax对象
+	            let xhr = new XMLHttpRequest();
+	            // 监听ajax状态变化
+	            xhr.onreadystatechange = function () {
+	
+	                if (this.readyState == 4 && this.status == 200) {
+	                    // 凝固结果
+	
+	                    resolved(this.responseText);
+	                }
+	            }
+	
+	            // 建立服务器连接
+	            xhr.open("GET", url, true);
+	
+	            // 发起请求
+	            xhr.send();
+	        })
+	    }
+	}
+	
+
+
+
+
+    let http = new Http();
+	var qconfirmedCountNum = 0;
+	var qcuredCountNum = 0;
+	var qdeadCountNum = 0;
+	var qcurrentConfirmedCountNum = 0;
+	
+	//国内
+    http.get("http://api.tianapi.com/txapi/ncovcity/index?key=ae673bd93ba17c1d7f6edd3ee7ab0398").then(result => {
+        result = JSON.parse(result);
+        console.log('国内result ==> ', result);
+
+        let newlist = result.newslist;
+		
+		for(key in newlist){
+			
+			qconfirmedCountNum += newlist[key].confirmedCount;
+			qcuredCountNum += newlist[key].curedCount;
+			qdeadCountNum += newlist[key].deadCount;
+			qcurrentConfirmedCountNum += newlist[key].currentConfirmedCount;
+			
+		}
+
+		console.log('国内qconfirmedCountNum ==> ', qconfirmedCountNum);
+		console.log('国内qcuredCountNum ==> ', qcuredCountNum);
+		console.log('国内qdeadCountNum ==> ', qdeadCountNum);
+		console.log('国内qcurrentConfirmedCountNum ==> ', qcurrentConfirmedCountNum);
+        //创建文档片段：主要解决操作真实DOM次数
+        let fragment = document.createDocumentFragment();
+        console.log(newlist);
+        //累计确诊
+        let quezheng = 0;
+        // 累计治愈
+        let zhiyu = 0;
+        // 累计死亡
+        let siwang = 0;
+        // 现有确诊
+        let newquezhen = 0;
+        // 境外输入
+        let jinwai = 0;
+        // 现有疑似 
+        let yisi = 0;
+
+        for (let key in newlist) {
+
+
+            //累计确诊
+            quezheng += newlist[key].confirmedCount;
+            // 累计治愈
+            zhiyu += newlist[key].curedCount;
+            // 累计死亡
+            siwang += newlist[key].deadCount;
+            // 现有确诊
+            newquezhen += newlist[key].currentConfirmedCount;
+			// 疑似病例			
+			yisi += newlist[key].suspectedCount;
+			
+            // console.log(cities)
+
+            // 创建dom
+            let btndiv = this.create('div');
+
+            // 添加类名
+            btndiv.className = "dropdown btn-lis";
+
+
+            btndiv.innerHTML += `<button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <ul>
+                                    <li>${newlist[key].provinceName}</li>
+                                    <li>${newlist[key].currentConfirmedCount}</li>
+                                    <li>${newlist[key].confirmedCount}</li>
+                                    <li>${newlist[key].deadCount}</li>
+                                    <li>${newlist[key].curedCount}</li>
+                                    <span class="caret"></span>
+                                </ul>
+                            </button>`;
+
+
+            //将创建的DOM添加到文档片段
+            fragment.appendChild(btndiv);
+
+
+            // 
+
+            let cities = newlist[key].cities;
+
+            for (let i in cities) {
+                // console.log(cities[i])
+
+                let citiesul = this.create('ul');
+
+                citiesul.className = "dropdown-menu ul-hide";
+
+                citiesul.setAttribute("aria-labelledby", "dLabel");
+
+                citiesul.innerHTML += `<li>
+                                    <ul>
+                                        <li>${cities[i].cityName}</li>
+                                        <li>${cities[i].currentConfirmedCount}</li>
+                                        <li>${cities[i].confirmedCount}</li>
+                                        <li>${cities[i].deadCount}</li>
+                                        <li>${cities[i].curedCount}</li>
+                                    </ul>
+                                </li>`
+
+
+                //将创建的DOM添加到文档片段
+                btndiv.appendChild(citiesul);
+
+            }
+
+        }
+
+        // console.log("quezheng ==>", newquezhen);
+        // 将文档片段添加到表格中
+        civildetails.appendChild(fragment);
+
+        //创建文档片段：主要解决操作真实DOM次数
+        // let fragmenta = document.createDocumentFragment();
+
+        topbox.innerHTML = `<div class="box col-xs-4">
+                            <h4>累计确诊</h4>
+                            <h2 style="color:#cc4100">${quezheng}</h2>
+                            <p>较上日<span>+139</span></p>
+                        </div>
+                        <div class="box col-xs-4">
+                            <h4>累计治愈</h4>
+                            <h2 style="color:#008d5d">${zhiyu}</h2>
+                            <p>较上日<span>+53</span></p>
+                        </div>
+                        <div class="box col-xs-4">
+                            <h4>累计死亡</h4>
+                            <h2 style="color:#666666">${siwang}</h2>
+                            <p>较上日<span>+1</span></p>
+                        </div>
+                        <div class="box col-xs-4">
+                            <h4>现有确诊</h4>
+                            <h2 style="color:#ff5500">${newquezhen}</h2>
+                            <p>较上日<span>+85</span></p>
+                        </div>
+                        <div class="box col-xs-4">
+                            <h4>境外输入确诊</h4>
+                            <h2 style="color:#638aa7">暂无数据</h2>
+                            <p>较上日<span>+6</span></p>
+                        </div>
+                        <div class="box col-xs-4">
+                            <h4>现有疑似</h4>
+                            <h2 style="color:#e68500">${yisi}</h2>
+                            <p>较上日<span>+1</span></p>
+                        </div>`;
+						
+						
+		
+        // topbox.appendChild(fragmenta);
+		
+		
+
+    })
+    // }
+
+	//国内2
+	// let httpinside = new Http();
+	
+	// httpinside.get("http://http://api.tianapi.com/txapi/ncov/index?key=ae673bd93ba17c1d7f6edd3ee7ab0398").then(result => {
+	// 	result = JSON.parse(result);
+	// 	console.log('国内2result ==> ', result);
+		
+		
+		
+		
+	// })
+
+
+
+
+
+
+
+
+    // 海外
+    let httpoverseas = new Http();
+
+    let civildetailsoverseas = query(".overseas_details")[0];
+
+    // let btns = query(".overseas .btn-lis button");
+	var confirmedCountNums = 0;
+	var curedCountNums = 0;
+	var deadCountNums = 0;
+	var currentConfirmedCountNums = 0;
+    httpoverseas.get("http://api.tianapi.com/txapi/ncovabroad/index?key=ae673bd93ba17c1d7f6edd3ee7ab0398").then(result => {
+        result = JSON.parse(result);
+        console.log('海外result ==> ', result);
+
+        let newlist = result.newslist;
+
+        //创建文档片段：主要解决操作真实DOM次数
+        let fragment = document.createDocumentFragment();
+        // console.log(newlist);
+        // console.log(newlist);
+
+		
+		for(key in newlist){
+			
+			confirmedCountNums += newlist[key].confirmedCount;
+			curedCountNums += newlist[key].curedCount;
+			deadCountNums += newlist[key].deadCount;
+			currentConfirmedCountNums += newlist[key].currentConfirmedCount;
+		}
+		
+		console.log('海外confirmedCountNums ==>',confirmedCountNums);
+		console.log('海外curedCountNums ==>',curedCountNums);
+		console.log('海外deadCountNums ==>',deadCountNums);
+		console.log('海外currentConfirmedCountNums ==>',currentConfirmedCountNums);
+
+        let types = [];
+        newlist.map(v => {
+            if (types.indexOf(v.continents) === -1) {
+                types.push(v.continents);
+            }
+        })
+
+        let products = {};
+        types.map(v => {
+            products[v] = [];
+            newlist.map(item => {
+                if (v == item.continents) {
+                    products[v].push(item);
+                }
+            })
+        })
+		
+		
+		//累计确诊人数
+		
+		
+        console.log('types ==> ', types);
+
+        console.log('products ==> ', products);
+        // for (let key in products) {
+        types.forEach(function (ite, ind) {
+
+            // console.log(ite)
+
+            // 创建dom
+            let btndiv = this.create('div');
+            // 添加类名
+          
+			let confirmedCountNums = 0;
+			//累计治愈人数
+			let curedCountNums = 0;
+			//累计死亡人数
+			let deadCountNums = 0;
+			//现存疑似人数
+			let suspectedCountNums = 0;
+			//现已确诊
+			let currentConfirmedCountNums = 0;
+			//新增疑似人数
+			let suspectedIncrNums = 0;
+			//相比昨天现存确诊人数
+			let currentConfirmedIncr = 0;
+			//相比昨天累计确诊人数
+			let confirmedIncr = 0;
+			//相比昨天新增治愈人数
+			let curedIncr = 0;
+			//相比昨天新增死亡人数
+			let deadIncr = 0;
+
+            //将创建的DOM添加到文档片段
+            fragment.appendChild(btndiv);
+
+
+
+            //遍历州内国家
+            for (let j in products) {
+                // console.log("地名",products[j])
+                let overseasstate = products[j];
+
+                // console.log("大分类疫情",products[j].continents);
+
+                // console.log("dafenle",ite);
+                
+                for (let k in overseasstate) {
+					
+					
+					//新增疑似人数
+					let suspectedIncrNums = 0;
+					//相比昨天现存确诊人数
+					let currentConfirmedIncr = 0;
+					//相比昨天累计确诊人数
+					let confirmedIncr = 0;
+					//相比昨天新增治愈人数
+					let curedIncr = 0;
+					//相比昨天新增死亡人数
+					let deadIncr = 0;
+					
+
+                    // console.log("海外地名", overseasstate[k].continents)
+                    if (ite == overseasstate[k].continents) {
+
+					//累计确诊人数
+					confirmedCountNums += overseasstate[k].confirmedCount;
+					//累计治愈人数
+					curedCountNums += overseasstate[k].curedCount;
+					//累计死亡人数
+					deadCountNums += overseasstate[k].deadCount;
+					//现存疑似人数
+					suspectedCountNums += overseasstate[k].suspectedCount ;
+					//现已确诊
+					currentConfirmedCountNums += overseasstate[k].currentConfirmedCount;
+					
+                    }
+                }
+            }
+			btndiv.className = "dropdown btn-lis";
+			     btndiv.innerHTML += `<button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true"
+			        aria-expanded="false">
+			        <ul>
+			            <li>${ite}</li>
+			            <li>${currentConfirmedCountNums}</li>
+			            <li>${confirmedCountNums}</li>
+			            <li>${curedCountNums}</li>
+			            <li>${deadCountNums}</li>
+			            <span class="caret"></span>
+			        </ul>
+			    </button>`;
+				
+            // }
+			//遍历州内国家
+			for (let j in products) {
+			    // console.log("地名",products[j])
+			    let overseasstate = products[j];
+			
+			    // console.log("大分类疫情",products[j].continents);
+			
+			    // console.log("dafenle",ite);
+			    
+			    for (let k in overseasstate) {
+					
+					
+					//新增疑似人数
+					let suspectedIncrNums = 0;
+					//相比昨天现存确诊人数
+					let currentConfirmedIncr = 0;
+					//相比昨天累计确诊人数
+					let confirmedIncr = 0;
+					//相比昨天新增治愈人数
+					let curedIncr = 0;
+					//相比昨天新增死亡人数
+					let deadIncr = 0;
+					
+			
+			        // console.log("海外地名", overseasstate[k].continents)
+			        if (ite == overseasstate[k].continents) {
+						
+			            let citiesul = this.create('ul');
+			
+			            citiesul.className = "dropdown-menu ul-hide";
+			
+			            citiesul.setAttribute("aria-labelledby", "dLabel");
+						
+			            citiesul.innerHTML += `<li>
+			        <ul>
+			            <li>${overseasstate[k].provinceName}</li>
+			            <li>${overseasstate[k].currentConfirmedCount}</li>
+			            <li>${overseasstate[k].confirmedCount}</li>
+			            <li>${overseasstate[k].deadCount}</li>
+			            <li>${overseasstate[k].curedCount}</li>
+			        </ul>
+			    </li>`
+			
+			            //将创建的DOM添加到文档片段
+			            btndiv.appendChild(citiesul);
+			        }
+			    }
+			}
+        })
+		
+		
+        // 将文档片段添加到表格中
+        // civildetails.appendChild(fragment);
+        // 将文档片段添加到表格中
+        civildetailsoverseas.appendChild(fragment);
+		
+		topboxs.innerHTML = `<div class="box col-xs-4">
+		                    <h4>累计确诊</h4>
+		                    <h2 style="color:#cc4100">${confirmedCountNums + qconfirmedCountNum}</h2>
+		                    <p>较上日<span>+278390</span></p>
+		                </div>
+		                <div class="box col-xs-4">
+		                    <h4>累计治愈</h4>
+		                    <h2 style="color:#008d5d">${curedCountNums + qcuredCountNum}</h2>
+		                    <p>较上日<span>+186187</span></p>
+		                </div>
+		                <div class="box col-xs-4">
+		                    <h4>累计死亡</h4>
+		                    <h2 style="color:#666666">${deadCountNums + qdeadCountNum}</h2>
+		                    <p>较上日<span>+6273</span></p>
+		                </div>
+		                <div class="box col-xs-4">
+		                    <h4>现有确诊</h4>
+		                    <h2 style="color:#ff5500">${currentConfirmedCountNums + qcurrentConfirmedCountNum}</h2>
+		                    <p>较上日<span>+85930</span></p>
+		                </div>
+		                <div class="box col-xs-4">
+		                    <h4>境外输入确诊</h4>
+		                    <h2 style="color:#638aa7">暂无数据</h2>
+		                    <p>较上日<span>暂无数据</span></p>
+		                </div>
+		                <div class="box col-xs-4">
+		                    <h4>现有疑似</h4>
+		                    <h2 style="color:#e68500">暂无数据</h2>
+		                    <p>较上日<span>暂无数据</span></p>
+		                </div>`;
+    })
+</script>
+
+</html>

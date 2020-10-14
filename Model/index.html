@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>model</title>
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Srisakdi:400,700&amp;subset=latin-ext,thai,vietnamese"
+        rel="stylesheet">
+    <link
+        href="http://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext"
+        rel="stylesheet">
+    <script src="jquery/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    
+</head>
+
+<body>
+    <div class="wrapper" id="home">
+        <!-- 头部分 -->
+        <div class="body_top">
+            <!-- 导航条 -->
+            <header>
+                <!-- 100% 宽度 -->
+                <div class="container-fluid">
+                    <!-- logo -->
+                    <div class="center">
+                        <div class="logo">
+                            <h1><a href="index.html">Models</a></h1>
+                        </div>
+                        <!-- nav -->
+                        <div class="box">
+                            <ul class="hidden-xs">
+                                <li><a href="index.html" class="active">Home</a></li>
+                                <li><a href="#about">About Us</a></li>
+                                <li><a href="#gallery">Gallery</a></li>
+                                <li class="dropdown">
+                                    <a id="dLabel" data-target="#" href="" data-toggle="dropdown" role="button"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        Dropdown
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                        <li><a href="#services">Services</a></li>
+                                        <li><a href="#blog">Blog</a></li>
+                                        <li><a href="#newsletter">Newsletter</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#contact">Contact Us</a></li>
+                            </ul>
+                            <div class="bao visible-xs">
+                                <a class="menu">Menu</a>
+                                <ul class="dropdownmenu">
+                                    <li><a href="index.html" style="color: #686de0;">Home</a></li>
+                                    <li style="margin: 8px 0;"><a href="#about">About Us</a></li>
+                                    <li><a href="#gallery">Gallery</a></li>
+                                    <li class="dropdown dropdown-xs" style="margin: 8px 0;">
+                                        <a id="dLabel" data-target="#" href="" data-toggle="dropdown" role="button"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            Dropdown
+                                            <span class="caret"></span>
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                            <li><a href="#services">Services</a></li>
+                                            <li><a href="#blog">Blog</a></li>
+                                            <li><a href="#newsletter">Newsletter</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="contact"><a href="#contact">Contact Us</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- 轮播图 -->
+            <div class="banner">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item zlq">
+                            <img src="images/2.jpg" alt="" style="width: 100%;">
+                            <div class="carousel-caption">
+                                <div class="box">
+                                    <h5>The easier way to find models</h5>
+                                    <h3 class="w3ls_pvt-title">Discover Models or Be Discovered</h3>
+                                    <a href="#contact" style="max-width: 150px;"
+                                        class="btn button-style mt-sm-5 mt-4">Contact
+                                        Us</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item active zlq">
+                            <img src="images/1.jpg" alt="" style="width: 100%;">
+                            <div class="carousel-caption">
+                                <div class="box">
+                                    <h5>The easier way to find models</h5>
+                                    <h3 class="w3ls_pvt-title">Discover Models or Be Discovered</h3>
+                                    <a href="#contact" style="max-width: 150px;"
+                                        class="btn button-style mt-sm-5 mt-4">Contact
+                                        Us</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item zlq">
+                            <img src="images/4.jpg" alt="" style="width: 100%;">
+                            <div class="carousel-caption">
+                                <div class="box">
+                                    <h5>The easier way to find models</h5>
+                                    <h3 class="w3ls_pvt-title">Discover Models or Be Discovered</h3>
+                                    <a href="#contact" style="max-width: 150px;"
+                                        class="btn button-style mt-sm-5 mt-4">Contact
+                                        Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 欢迎 -->
+        <div class="welcome" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 left">
+                        <h3>Welcome To Our Models Website</h3>
+                        <h4 class="mb-sm-5 mb-4 mt-3 font-italic">Together we’ll make this world <br>more beautiful.
+                        </h4>
+                        <div class="box row">
+                            <div class="boxLeft col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <div class="icon-effect">
+                                    <span class="fa fa-spinner"></span>
+                                </div>
+                                <h5 class="mt-4 mb-3">Make Over</h5>
+                                <p>Ut enim ad minima ven aiam, quis no strum ullam corp oris susc ipit.</p>
+                            </div>
+                            <div class="boxRight col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <div class="icon-effect">
+                                    <span class="fa fa-star-o"></span>
+                                </div>
+                                <h5 class="mt-4 mb-3">Stylist</h5>
+                                <p>Ut enim ad minima ven aiam, quis no strum ullam corp oris susc ipit.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 right">
+                        <img src="images/img.jpg" alt="" style="max-width: 100%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 到这里来 -->
+        <div class="come" id="services">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="box1 col-lg-4 col-md-4 col-sm-4">
+                        <i class="fa fa-eye"></i>
+                        <h4>Heading Here</h4>
+                        <p>Ut enim ad minima veniam, quis nostrum ullam corporis suscipit laboriosam.</p>
+                    </div>
+                    <div class="box2 col-lg-4 col-md-4 col-sm-4">
+                        <i class="fa fa-gift"></i>
+                        <h4>Heading Here</h4>
+                        <p>Ut enim ad minima veniam, quis nostrum ullam corporis suscipit laboriosam.</p>
+                    </div>
+                    <div class="box3 col-lg-4 col-md-4 col-sm-4">
+                        <i class="fa fa-heart-o"></i>
+                        <h4>Heading Here</h4>
+                        <p>Ut enim ad minima veniam, quis nostrum ullam corporis suscipit laboriosam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 博客 -->
+        <div class="blog" id="blog">
+            <div class="container">
+                <div class="blog_title text-center">
+                    <h3 class="mb-2">Blog Posts</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud ullam.</p>
+                </div>
+                <div class="row blog_foot">
+                    <div class="col-lg-4 col-md-4 top">
+                        <div class="pic">
+                            <a href=""><img src="images/blog1.jpg" alt=""></a>
+                            <h3>13<span>Sep</span></h3>
+                        </div>
+                        <div class="bottom">
+                            <h4>Sit accus antium</h4>
+                            <ul class="list">
+                                <li>
+                                    <a href="#"><i class="fa fa-thumbs-up"></i>20 Likes</a>
+                                </li>
+                                <li style="margin: 0 16px;">
+                                    <a href="#"><i class="fa fa-comments"></i>48 Comments</a>
+                                </li>
+                            </ul>
+                            <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                minim veniam, quis
+                                nostrud exercitation.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 top two">
+                        <div class="pic">
+                            <a href=""><img src="images/blog2.jpg" alt=""></a>
+                            <h3>16<span>Sep</span></h3>
+                        </div>
+                        <div class="bottom">
+                            <h4>Sit accus antium</h4>
+                            <ul class="list">
+                                <li>
+                                    <a href="#"><i class="fa fa-thumbs-up"></i>20 Likes</a>
+                                </li>
+                                <li style="margin: 0 16px;">
+                                    <a href="#"><i class="fa fa-comments"></i>48 Comments</a>
+                                </li>
+                            </ul>
+                            <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                minim veniam, quis
+                                nostrud exercitation.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 top">
+                        <div class="pic">
+                            <a href=""><img src="images/blog3.jpg" alt=""></a>
+                            <h3>20<span>Sep</span></h3>
+                        </div>
+                        <div class="bottom">
+                            <h4>Sit accus antium</h4>
+                            <ul class="list">
+                                <li>
+                                    <a href="#"><i class="fa fa-thumbs-up"></i>20 Likes</a>
+                                </li>
+                                <li style="margin: 0 16px;">
+                                    <a href="#"><i class="fa fa-comments"></i>48 Comments</a>
+                                </li>
+                            </ul>
+                            <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                minim veniam, quis
+                                nostrud exercitation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 广告 -->
+        <div class="beauty">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-7">
+                        <span>Fashion Look</span>
+                        <h3 class="agile-title">Creating Your Beauty Image</h3>
+                        <p>Donec consequat sapien ut leo cursus rhoncus. Nullam dui mi, vulputate ac metus at</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 展览 -->
+        <div class="show" id="gallery">
+            <div class="container">
+                <div class="title text-center">
+                    <h3 class="mb-2">Our Gallery</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud ullam.</p>
+                </div>
+                <div class="content">
+                    <div class="top row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <a href=""><img src="images/g1.jpg" alt=""></a>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 abc">
+                            <a href=""><img src="images/g2.jpg" alt=""></a>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 abc">
+                            <a href=""><img src="images/g3.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="bottom row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 abc">
+                            <a href=""><img src="images/g4.jpg" alt=""></a>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 abc">
+                            <a href=""><img src="images/g5.jpg" alt=""></a>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 abc">
+                            <a href=""><img src="images/g6.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 新闻稿 -->
+        <div class="newsletter" id="newsletter">
+            <div class="container">
+                <div class="title text-center">
+                    <h3>Our Newsletter</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud ullam.</p>
+                </div>
+                <div class="inp">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <input type="text" name="name" placeholder="Name">
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <input type="email" name="email" placeholder="Email Address">
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <input type="submit">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <!-- 表格 -->
+        <div class="address" id="contact">
+            <div class="container">
+                <div class="title text-center">
+                    <h3>Contact Us</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud ullam.</p>
+                </div>
+                <div class="content row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 left">
+                        <div class="first">
+                            <h4>Address</h4>
+                            <p>123 San Sebastian, Hill Towers 4567 New York City USA.</p>
+                        </div>
+                        <div class="second" style="margin: 32px 0;">
+                            <h4>Phone </h4>
+                            <p>+222 111 333 4444</p>
+                            <p>+222 111 333 5555</p>
+                        </div>
+                        <div class="third">
+                            <h4 class="mb-3">Mail</h4>
+                            <p><a href="mailto:example@mail.com"> Mail1@example.com</a></p>
+                            <p><a href="mailto:example@mail.com"> Mail2@example.com</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 right">
+                        <div class="all">
+                            <h4>Get In Touch</h4>
+                            <form action="">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Name" name="name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" placeholder="Email" name="email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" placeholder="Subject" name="subject">
+                                </div>
+                                <div class="form-group">
+                                    <textarea placeholder="Message"></textarea>
+                                </div>
+                                <input type="submit" value="SEND">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 尾部 -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 first">
+                        <h3 class="footer-title">Who We Are</h3>
+                        <div class="box">
+                            <p>
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem
+                                aperiam, eaque ipsa quae.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 second">
+                        <h3 class="footer-title">Latest News</h3>
+                        <div class="box">
+                            <div class="hezi">
+                                <h4>Sed ut piciatis unde</h4>
+                                <p>30 Sep 2018</p>
+                            </div>
+                            <div class="hezi" style="margin: 24px 0;">
+                                <h4>Modi tempra incunt</h4>
+                                <p>02 Aug 2018</p>
+                            </div>
+                            <div class="hezi">
+                                <h4>ullam corpis sucipit</h4>
+                                <p>06 Aug 2018</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 third">
+                        <h3 class="footer-title">Contact Us</h3>
+                        <div class="box">
+                            <div class="hezi">
+                                <h4>Phone</h4>
+                                <p>+121 098 8907 9987</p>
+                            </div>
+                            <div class="hezi" style="margin: 24px 0;">
+                                <h4>Email</h4>
+                                <p><a href="">info@example.com</a></p>
+                            </div>
+                            <div class="hezi">
+                                <h4>Location</h4>
+                                <p>Honey Avenue, New York City</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 fourth">
+                        <h3 class="footer-title">Quick Links</h3>
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="#about">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#blog">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#gallery">Gallery</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="footer-jiangtou">
+                <a href="#home" class="text-center"></a>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var bool = false;
+    var panduan = false;
+    $('.menu').click(function () {
+        if (bool == false) {
+            $('.body_top header').animate({
+                height: "265px"
+            });
+            $('.dropdownmenu').css('display', 'block');
+            $(this).addClass('active')
+            bool = true;
+        } else {
+            $('.body_top header').animate({
+                height: "80px"
+            });
+            $('.dropdownmenu').css('display', 'none');
+            $(this).removeClass('active')
+
+            bool = false
+        }
+    })
+    $('.dropdown-xs').click(function () {
+        if (panduan == false) {
+            $('.body_top header').animate({
+                height: "355px"
+            });
+            $('.contact').animate({
+                marginTop: "97px"
+            });
+            $('.dropdown-xs>a').css('color', '#FC427B');
+            panduan = true;
+        } else {
+            $('.body_top header').animate({
+                height: "265px"
+            });
+            $('.contact').animate({
+                marginTop: "0"
+            });
+            $('.dropdown-xs>a').css('color', '#4c4c4c');
+            panduan = false
+        }
+    })
+</script>
+
+</html>

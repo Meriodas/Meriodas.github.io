@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+
+    }
+
+    body {
+        font-size: 12px;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .headcontent {
+        /* height: 71px; */
+        background-color: #f5f5f5;
+    }
+
+    .headcontent>.container>.row {
+        height: 71px;
+    }
+
+    .headcontent .logoimg {
+        height: 71px;
+    }
+
+    .headcontent .logoimg img {
+        width: 110px;
+        height: 36px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .headcontent .nav_lis {
+        height: 71px;
+        width: 100%;
+    }
+
+    .headcontent .nav_lis li {
+        float: left;
+        /* font-size: 12px; */
+        margin-left: 2%;
+        line-height: 71px;
+    }
+
+    .headcontent .xsimg {
+        height: 71px;
+    }
+
+    .headcontent .xsimg img {
+        width: 31px;
+        margin-right: 2%;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .headcontent .h_text {
+        /* text-align: center; */
+        position: relative;
+        top: 33.3%;
+    }
+
+    .headcontent .h_text h6 {
+        margin: 30px 0 18px;
+    }
+
+    .headcontent .sm_img img {
+        width: 100%;
+    }
+
+    .mdcontent h1,
+    .mdbottom h1,
+    .btbanner h1,
+    .tail h1,
+    .tail_fw h1 {
+        text-align: center;
+        font-size: 35px;
+        color: #333333;
+        padding-top: 108px;
+        padding-bottom: 59px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .mdcontent .md_boxs {
+
+        text-align: center;
+        width: 23%;
+        float: left;
+        margin: 0px 1%;
+    }
+
+    .mdcontent .md_box {
+        padding: 21px 14px;
+    }
+
+    .mdcontent .md_boxs img {
+        width: 25.5%;
+        left: 13%;
+        transform: translateX(-50%);
+        position: relative;
+    }
+
+    .mdcontent .md_title {
+        color: #333333;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 10%;
+        margin-bottom: 15%;
+    }
+
+    .mdcontent .md_text {
+        color: #333333;
+        font-size: 14px;
+        line-height: 25px;
+        margin-bottom: 34%;
+    }
+
+    .KHAL .khal_box {
+        /* position: relative; */
+        text-align: center;
+        padding-bottom: 10%;
+        background: white;
+
+    }
+
+    .KHAL .khal_box .khal_img img {
+        width: 90%;
+        padding: 5%;
+    }
+
+    .KHAL .khal_text {}
+
+    .KHAL .khal_name {
+
+        font-size: 19px;
+        font-weight: 700;
+        color: #657180;
+    }
+
+    .KHAL .col-sm-4 {
+        padding: 5px;
+    }
+
+    .KHAL .khal_type {
+        color: #657180;
+    }
+
+    .KHAL .md_bottom {
+
+        width: 100%;
+        text-align: center;
+        /* line-height: 80px; */
+        height: 80px;
+    }
+
+    .KHAL .md_bottom span {
+        cursor: pointer;
+        display: inline-block;
+        background: white;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 25px;
+        width: 150px;
+        height: 40px;
+        color: #333333;
+        border: 1px solid #333333;
+        line-height: 40px;
+        vertical-align: middle;
+    }
+
+    .bg_c {
+        background: #f5f5f5;
+    }
+
+    .mrl10 {
+        margin: 0px 5px;
+    }
+    .ta_c{
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 3%;
+        position: absolute;
+
+    }
+    .btbanner .bt_ys .row img {
+        width: 100%;
+    }
+
+    .tail{
+        padding-bottom: 100px;
+        position: relative;
+    }
+    .tail .tail_hz .row img {
+        width: 100%;
+
+    }
+    
+    .p0 {
+        padding: 0;
+    }
+
+    .tail .tail_fw .tail_box {
+        text-align: center;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .tail .tail_fw .tail_box img {
+        width: 42%;
+        
+    }
+
+    .tail .tail_fw .tail_box span {
+        font-size: 11px;
+        display: block;
+        margin-top: 5%;
+        color: #333;
+        transform: scale(0.9);
+    }
+
+    /* 8等份 */
+    .col-xs-1-8,
+    .col-sm-1-8,
+    .col-md-1-8,
+    .col-lg-1-8,
+    .col-xs-1-3 {
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        position: relative;
+    }
+
+    .col-xs-1-8 {
+        width: 12.5%;
+        padding: 0 5px;
+        float: left;
+    }
+
+    .col-xs-1-3 {
+        width: 12.5%;
+        padding: 0 5px;
+
+        float: left;
+    }
+
+    @media (min-width: 768px) {
+        .col-sm-1-8 {
+            width: 12.5%;
+            float: left;
+        }
+    }
+
+    @media (max-width: 729px) {
+        .col-xs-1-3 {
+            width: 25%;
+            float: left;
+
+        }
+        .tail_box{
+            width: 16%;
+        }
+        .tail .tail_fw .tail_box img{
+            width: 32%;
+        }
+    }
+
+    /* @media (min-width: 992px) {
+        .col-md-1-8 {
+            width: 12.5%;
+            float: left;
+        }
+    } */
+</style>
+
+<body>
+    <div class="headcontent">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3 logoimg pull-left">
+                    <img src="images/logo01.png" class="img-responsive" alt="Responsive image">
+                </div>
+                <div class="visible-xs pull-right xsimg">
+                    <img src="images/three1.png" class="img-responsive" alt="Responsive image">
+                </div>
+                <div class="hidden-xs">
+                    <ul class="nav_lis">
+                        <li>首页</li>
+                        <li>高端网站定制</li>
+                        <li>微信/小程序</li>
+                        <li>APP开发</li>
+                        <li>运营增长</li>
+                        <li>客户案例</li>
+                        <li>关于我们</li>
+                        <li>联系我们</li>
+                        <div class="clearfix"></div>
+                    </ul>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="hidden-xs">
+                        <div class="col-sm-6 h_text">
+                            <h2>专业 "互联网+" 服务商</h2>
+                            <h6>提供互联网产品设计规划、<br>技术开发、运营增长等全方位服务</h6>
+                            <button type="button" class="btn btn-danger">免费咨询</button>
+                        </div>
+                        <div class="col-sm-6 sm_img">
+                            <img src="images/index_bannersmall1.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="mdcontent">
+        <div class="container">
+            <div class="row md_top">
+                <h1>服务与解决方案</h1>
+            </div>
+            <div class="row">
+                <div class="hidden-xs">
+                    <div class="md_boxs">
+                        <div class="md_box">
+                            <img src="images/index_servicetwo.png">
+                            <div class="md_title">高端定制</div>
+                            <div class="md_text">5年专业服务，PC端网站、H5活动页、微信公众号网站、响应式网站我们样样精通，每一步流程我们都追求精致、提供多对一VIP服务。</div>
+                            <button type="button" class="btn btn-danger">免费咨询</button>
+                        </div>
+                    </div>
+                    <div class="md_boxs">
+                        <div class="md_box">
+                            <img src="images/index_servicetwo.png">
+                            <div class="md_title">高端定制</div>
+                            <div class="md_text">5年专业服务，PC端网站、H5活动页、微信公众号网站、响应式网站我们样样精通，每一步流程我们都追求精致、提供多对一VIP服务。</div>
+                            <button type="button" class="btn btn-danger">免费咨询</button>
+                        </div>
+                    </div>
+                    <div class="md_boxs">
+                        <div class="md_box">
+                            <img src="images/index_servicetwo.png">
+                            <div class="md_title">高端定制</div>
+                            <div class="md_text">5年专业服务，PC端网站、H5活动页、微信公众号网站、响应式网站我们样样精通，每一步流程我们都追求精致、提供多对一VIP服务。</div>
+                            <button type="button" class="btn btn-danger">免费咨询</button>
+                        </div>
+                    </div>
+                    <div class="md_boxs">
+
+                        <div class="md_box">
+                            <img src="images/index_servicetwo.png">
+                            <div class="md_title">高端定制</div>
+                            <div class="md_text">5年专业服务，PC端网站、H5活动页、微信公众号网站、响应式网站我们样样精通，每一步流程我们都追求精致、提供多对一VIP服务。</div>
+                            <button type="button" class="btn btn-danger">免费咨询</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <div class="mdbottom bg_c">
+        <div class="container">
+            <div class="KHAL ">
+                <div class="row md_top">
+                    <h1>客户案例</h1>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-4">
+                        <div class="khal_box">
+                            <div class="khal_img">
+                                <img src="images/kehu01.png">
+                            </div>
+                            <div class="khal_text">
+                                <div class="khal_name">某健康app应用</div>
+                                <div class="khal_type">app</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <div class="khal_box">
+                            <div class="khal_img">
+                                <img src="images/kehu02.png">
+                            </div>
+                            <div class="khal_text">
+                                <div class="khal_name">血检管理平台</div>
+                                <div class="khal_type">PC网站+H5网站</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <div class="khal_box">
+                            <div class="khal_img">
+                                <img src="images/kehu03.png">
+                            </div>
+                            <div class="khal_text">
+                                <div class="khal_name">类加推某企业管理类小程序</div>
+                                <div class="khal_type">小程序</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <div class="khal_box">
+                            <div class="khal_img">
+                                <img src="images/kehu04.png">
+                            </div>
+                            <div class="khal_text">
+                                <div class="khal_name">unillife商城</div>
+                                <div class="khal_type">PC网站+H5网站</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <div class="khal_box">
+                            <div class="khal_img">
+                                <img src="images/kehu05.png">
+                            </div>
+                            <div class="khal_text">
+                                <div class="khal_name">链巴巴</div>
+                                <div class="khal_type">PC网站+APP</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <div class="khal_box">
+                            <div class="khal_img">
+                                <img src="images/kehu06.png">
+                            </div>
+                            <div class="khal_text">
+                                <div class="khal_name">福丽房产</div>
+                                <div class="khal_type">PC网站+H5网站+APP</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md_bottom">
+                    <span>查看更多项目案例</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- </div> -->
+    <div class="btbanner">
+        <div class="container">
+            <div class="bt_ys">
+                <div class="row md_top">
+                    <h1>我们的优势</h1>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 p0">
+                        <img src="images/goods_left.png">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 p0">
+                        <img src="images/goods_right.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tail">
+        <div class="container">
+            <div class="tail_hz">
+                <div class="row md_top">
+                    <h1>合作伙伴</h1>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3 col-sm-3 p0">
+                        <img src="images/index_hezuo1.png">
+                    </div>
+                    <div class="col-xs-3 col-sm-3 p0">
+                        <img src="images/index_hezuo2.png">
+                    </div>
+                    <div class="col-xs-3 col-sm-3 p0">
+                        <img src="images/index_hezuo3.png">
+                    </div>
+                    <div class="col-xs-3 col-sm-3 p0">
+                        <img src="images/index_hezuo4.png">
+                    </div>
+                    <div class="col-xs-3 col-sm-3 p0">
+                        <img src="images/index_hezuo5.png">
+                    </div>
+                    <div class="col-xs-3 col-sm-3 p0">
+                        <img src="images/index_hezuo6.png">
+                    </div>
+                    <div class="col-xs-3 col-sm-3 p0">
+                        <img src="images/index_hezuo7.png">
+                    </div>
+                    <div class="col-xs-3 col-sm-3 p0">
+                        <img src="images/index_hezuo8.png">
+                    </div>
+                    <div class="col-xs-3 col-sm-3 p0">
+                        <img src="images/index_hezuo9.png">
+                    </div>
+                    <div class="col-xs-3 col-sm-3 p0">
+                        <img src="images/index_hezuo10.png">
+                    </div>
+                    <div class="col-xs-3 col-sm-3 p0">
+                        <img src="images/index_hezuo11.png">
+                    </div>
+                    <div class="col-xs-3 col-sm-3 p0">
+                        <img src="images/index_hezuo12.png">
+                    </div>
+
+                </div>
+            </div>
+            <div class="tail_fw">
+                <div class="row md_top">
+                    <h1>业务流程</h1>
+                </div>
+                <div class="row">
+                    <div class="col-sm-1-8 col-xs-1-3">
+                        <div class="tail_box">
+                            <img src="images/index_Process1.png">
+                            <span>沟通细化需求</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-1-8 col-xs-1-3">
+                        <div class="tail_box">
+                            <img src="images/index_Process2.png">
+                            <span>签约合作</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-1-8 col-xs-1-3">
+                        <div class="tail_box">
+                            <img src="images/index_Process3.png">
+                            <span>原型设计</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-1-8 col-xs-1-3">
+                        <div class="tail_box">
+                            <img src="images/index_Process4.png">
+                            <span>UI及交互设计</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-1-8 col-xs-1-3">
+                        <div class="tail_box">
+                            <img src="images/index_Process5.png">
+                            <span>开发调试</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-1-8 col-xs-1-3">
+                        <div class="tail_box">
+                            <img src="images/index_Process6.png">
+                            <span>测试验收</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-1-8 col-xs-1-3">
+                        <div class="tail_box">
+                            <img src="images/index_Process7.png">
+                            <span>培训售后</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-1-8 col-xs-1-3">
+                        <div class="tail_box">
+                            <img src="images/index_Process8.png">
+                            <span>运营增长服务</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="ta_c">
+                    <button type="button" class="btn btn-danger">免费咨询</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

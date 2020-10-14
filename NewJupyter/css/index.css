@@ -1,0 +1,705 @@
+.jpt {
+  position: relative ;
+}
+.jpt .navbar {
+  width: 100%;
+  position: fixed;
+  margin: 0;
+  background: white;
+  z-index: 1;
+}
+.jpt .navbar .container-fluid {
+  padding: 0 25px;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .jpt .navbar .container-fluid {
+    padding: 0;
+  }
+}
+.jpt .navbar .container-fluid .navbar-header {
+  margin: 0;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .jpt .navbar .container-fluid .navbar-header {
+    padding: 0 15px;
+  }
+}
+.jpt .navbar .container-fluid .navbar-header .navbar-brand {
+  height: 60px;
+  overflow: hidden;
+  font-size: 18px;
+  line-height: 20px;
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+@media (max-width: 992px) {
+  .jpt .navbar .container-fluid .navbar-header .navbar-brand {
+    width: 50px;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .jpt .navbar .container-fluid .navbar-header .navbar-brand {
+    width: 30px;
+    display: block;
+    position: static;
+    margin-left: 15px;
+  }
+}
+.jpt .navbar .container-fluid .navbar-header .navbar-brand img {
+  height: 45px;
+  vertical-align: middle;
+  border: 0;
+}
+@media (max-width: 992px) {
+  .jpt .navbar .container-fluid .navbar-header .navbar-brand img {
+    height: 36px;
+    margin-top: 4px;
+  }
+}
+.jpt .navbar .container-fluid .navbar-header .navbar-toggle {
+  margin-top: 22px;
+  margin-right: 0;
+}
+.jpt .navbar .container-fluid .navbar-collapse .nav,
+.jpt .navbar .container-fluid .navbar-collapse .navbar-nav,
+.jpt .navbar .container-fluid .navbar-collapse .navbar-right {
+  padding: 15px 0 !important;
+  margin: 0;
+}
+.jpt .navbar .container-fluid .navbar-collapse .nav li a,
+.jpt .navbar .container-fluid .navbar-collapse .navbar-nav li a,
+.jpt .navbar .container-fluid .navbar-collapse .navbar-right li a {
+  padding: 12px 12px 10px;
+  font-size: 16px;
+}
+@media (max-width: 992px) {
+  .jpt .navbar .container-fluid .navbar-collapse .nav li a,
+  .jpt .navbar .container-fluid .navbar-collapse .navbar-nav li a,
+  .jpt .navbar .container-fluid .navbar-collapse .navbar-right li a {
+    font-size: 13px;
+  }
+}
+.jpt .navbar .navbar-brand {
+  padding: 0;
+}
+.jpt .orange-button {
+  background-color: #E46E2E;
+  border-radius: 2px;
+  color: white;
+  display: inline-block;
+  font-size: 16px;
+  padding: 13px 26px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0px 4px 0px 4px;
+}
+.jpt .orange-button:hover {
+  background-color: #F27624;
+  color: white;
+  text-decoration: none;
+  outline: 0;
+}
+.jpt .con-jumbotron {
+  padding: 0;
+  padding-top: 72px;
+  margin: 0;
+}
+.jpt .con-jumbotron .row {
+  padding: 0;
+  margin: 0;
+}
+.jpt .con-jumbotron .row .con-content {
+  padding: 0;
+}
+.jpt .con-jumbotron .row .con-content .con-container {
+  background-image: url(../img/jupytercon-planet.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  min-height: 500px;
+}
+@media (max-width: 992px) {
+  .jpt .con-jumbotron .row .con-content .con-container {
+    background-image: url(../img/jupytercon-planet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    text-align: right;
+  }
+}
+.jpt .con-jumbotron .row .con-content .con-container .con-contain .con-date {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  line-height: 34px;
+  color: #FFFFFF;
+  float: right;
+  margin-right: 10px;
+  margin-top: 36px;
+  margin-bottom: -10px;
+}
+.jpt .con-jumbotron .row .con-content .con-container .con-contain .con-title {
+  float: right;
+  clear: both;
+  margin: 0 auto;
+}
+.jpt .con-jumbotron .row .con-content .con-container .con-contain .con-subtitle {
+  float: right;
+  clear: both;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+@media (min-width: 992px) {
+  .jpt .con-jumbotron .row .con-content .con-container .con-contain .con-subtitle {
+    font-size: 36px;
+    line-height: 1.25;
+  }
+}
+.jpt .con-jumbotron .row .con-content .con-container .con-contain .con-copy {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 200;
+  color: black;
+  text-align: right;
+  float: right;
+  width: 460px;
+  height: 44px;
+  clear: both;
+  margin-bottom: 8px;
+}
+.jpt .con-jumbotron .row .con-content .con-container .con-contain .con-button {
+  float: right;
+  clear: both;
+  margin-right: 28px !important;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.jpt .jumbotron {
+  margin: 30px 0;
+  background-color: white;
+  overflow: hidden;
+}
+.jpt .jumbotron .row .col-md-12 {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.jpt .jumbotron .row .col-md-12 .img-container {
+  width: 100%;
+  position: absolute;
+  margin: 0 auto;
+  text-align: center;
+  height: 100%;
+}
+.jpt .jumbotron .row .col-md-12 .img-container span #main {
+  height: calc(100% - 20px);
+  margin-top: 10px;
+  padding-left: 20px;
+}
+.jpt .jumbotron .row .col-md-12 img {
+  margin: 0 auto;
+  vertical-align: middle;
+}
+.jpt .container .row .col-md-12 .col-md-8 .jumbotron-text,
+.jpt .container .row .col-md-12 .col-md-offset-2 .jumbotron-text {
+  text-align: center;
+  padding-bottom: 32px;
+}
+.jpt #jupyterlab .section-grey {
+  padding: 5% 0;
+  background-color: #f5f5f5;
+  border-top: 1px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
+}
+@media (min-width: 768px) {
+  .jpt #jupyterlab .section-grey .lab-preview .con-container {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(100% - 20px);
+  }
+}
+.jpt #jupyterlab .section-grey .lab-preview .con-container .row {
+  margin: 0;
+}
+.jpt #jupyterlab .section-grey .lab-preview .con-container .row .nb-highlight-text {
+  margin-top: 60px;
+}
+@media (min-width: 768px) {
+  .jpt #jupyterlab .section-grey .lab-preview .con-container .row .nb-highlight-text h3 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.25;
+  }
+}
+@media (min-width: 992px) {
+  .jpt #jupyterlab .section-grey .lab-preview .con-container .row .nb-highlight-text h4 {
+    font-size: 18px;
+  }
+}
+.jpt #jupyterlab .section-grey .lab-preview .con-container .row .nb-highlight-text .nb-desc {
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 20px;
+  margin-bottom: 32px;
+}
+@media (max-width: 768px) {
+  .jpt #jupyterlab .section-grey .lab-preview .con-container .row .nb-highlight-text .button-container {
+    text-align: center;
+  }
+}
+.jpt #jupyterlab .section-grey .lab-preview .con-container .row .nb-highlight-text .button-container .install-button {
+  margin-top: 20px;
+}
+.jpt #about-note .section-white {
+  padding: 5% 0;
+  background-color: #ffffff;
+}
+@media (min-width: 768px) {
+  .jpt #about-note .section-white .lab-preview .con-container {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(100% - 20px);
+  }
+}
+.jpt #about-note .section-white .lab-preview .con-container .row {
+  margin: 0;
+}
+.jpt #about-note .section-white .lab-preview .con-container .row .nb-highlight-text {
+  margin-top: 60px;
+}
+@media (min-width: 768px) {
+  .jpt #about-note .section-white .lab-preview .con-container .row .nb-highlight-text h3 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.25;
+  }
+}
+@media (min-width: 992px) {
+  .jpt #about-note .section-white .lab-preview .con-container .row .nb-highlight-text h4 {
+    font-size: 18px;
+  }
+}
+.jpt #about-note .section-white .lab-preview .con-container .row .nb-highlight-text .nb-desc {
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 20px;
+  margin-bottom: 32px;
+}
+@media (max-width: 768px) {
+  .jpt #about-note .section-white .lab-preview .con-container .row .nb-highlight-text .button-container {
+    text-align: center;
+  }
+}
+.jpt #about-note .section-white .lab-preview .con-container .row .nb-highlight-text .button-container .install-button {
+  margin-top: 20px;
+}
+.jpt #about-note .notebook-features {
+  margin-top: 32px;
+  padding: 0 10px;
+}
+@media (max-width: 992px) {
+  .jpt #about-note .notebook-features {
+    padding-top: 40px;
+  }
+}
+.jpt #about-note .notebook-features .container {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .jpt #about-note .notebook-features .container {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(100% - 20px);
+  }
+}
+.jpt #about-note .notebook-features .container .row .col-md-3 img {
+  vertical-align: middle;
+}
+@media (max-width: 992px) {
+  .jpt #about-note .notebook-features .container .row .col-md-3 img {
+    margin: 0 auto;
+    width: 125px;
+  }
+}
+@media (max-width: 992px) {
+  .jpt #about-note .notebook-features .container .row .col-md-3 #feature {
+    padding-top: 4px;
+  }
+}
+@media (max-width: 992px) {
+  .jpt #about-note .notebook-features .container .row .col-md-3 h4 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.22;
+    text-align: center;
+  }
+}
+.jpt #about-note .notebook-features .container .row .col-md-3 p {
+  font-size: 16px;
+  padding-top: 16px;
+  margin-bottom: 10px;
+}
+@media (max-width: 992) {
+  .jpt #about-note .notebook-features .container .row .col-md-3 p {
+    margin: 0 auto;
+  }
+}
+.jpt #jupyterlhub .section-grey {
+  padding: 5% 0;
+  background-color: #f5f5f5;
+  border-top: 1px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
+}
+.jpt #jupyterlhub .section-grey .container {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .jpt #jupyterlhub .section-grey .container {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(100% - 20px);
+  }
+}
+.jpt #jupyterlhub .section-grey .container .row div .hublogo img {
+  margin: 0 auto;
+}
+@media (max-width: 992px) {
+  .jpt #jupyterlhub .section-grey .container .row div .hublogo img {
+    width: 60%;
+  }
+}
+.jpt #jupyterlhub .section-grey .container .row .hubfeatures {
+  background: url(../img/line.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-top: 48px;
+}
+@media (max-width: 768px) {
+  .jpt #jupyterlhub .section-grey .container .row .hubfeatures {
+    background: url();
+  }
+}
+.jpt #jupyterlhub .section-grey .container .row .hubfeatures .feature-middle {
+  margin-top: 40px;
+}
+.jpt #jupyterlhub .section-grey .container .row .hubfeatures .hubfeature {
+  text-align: center;
+}
+.jpt #jupyterlhub .section-grey .container .row .hubfeatures .hubfeature img {
+  margin: 0 auto;
+}
+@media (min-width: 992px) {
+  .jpt #jupyterlhub .section-grey .container .row .hubfeatures .hubfeature h4 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.22;
+  }
+}
+.jpt #jupyterlhub .section-grey .container .row .hubfeatures .hubfeature p {
+  margin: 0 0 10px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.375;
+}
+@media (max-width: 992px) {
+  .jpt #jupyterlhub .section-grey .container .row .hubfeatures .hubfeature p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.375;
+  }
+}
+.jpt #jupyterlhub .section-grey .container .row .hubbutton {
+  text-align: center;
+  margin-top: 24px;
+}
+.jpt #voila .section-white {
+  padding: 5% 0;
+  background-color: #ffffff;
+}
+@media (min-width: 768px) {
+  .jpt #voila .section-white .volia-preview .container {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(100% - 20px);
+  }
+}
+.jpt #voila .section-white .volia-preview .container .row {
+  margin: 0;
+}
+.jpt #voila .section-white .volia-preview .container .row .nb-highlight-text {
+  margin-top: 60px;
+}
+@media (min-width: 768px) {
+  .jpt #voila .section-white .volia-preview .container .row .nb-highlight-text h3 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.25;
+  }
+}
+@media (min-width: 992px) {
+  .jpt #voila .section-white .volia-preview .container .row .nb-highlight-text h4 {
+    font-size: 18px;
+  }
+}
+.jpt #voila .section-white .volia-preview .container .row .nb-highlight-text .nb-desc {
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 20px;
+  margin-bottom: 32px;
+}
+@media (max-width: 768px) {
+  .jpt #voila .section-white .volia-preview .container .row .nb-highlight-text .button-container {
+    text-align: center;
+  }
+}
+.jpt #current-use .section-grey {
+  padding: 5% 0;
+  background-color: #f5f5f5;
+  border-top: 1px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
+}
+@media (min-width: 768px) {
+  .jpt #current-use .section-grey .container {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(100% - 20px);
+  }
+}
+@media (min-width: 992px) {
+  .jpt #current-use .section-grey .container .row h3 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.25;
+  }
+}
+.jpt #current-use .section-grey .container .row .section-header {
+  margin: 12px auto 8px;
+  text-align: center;
+}
+.jpt #current-use .section-grey .container .row ul {
+  margin-top: 0;
+  margin-bottom: 10px;
+  list-style: none;
+  padding-inline-start: 0;
+}
+.jpt #current-use .section-grey .container .row .companies {
+  margin: 0 auto;
+}
+.jpt #current-use .section-grey .container .row .companies .col img {
+  display: block;
+  width: 100%;
+  max-height: 60px;
+}
+.jpt #current-use .section-grey .container .row .companies li {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 2%;
+  vertical-align: middle;
+  width: 19.5%;
+}
+@media (max-width: 768px) {
+  .jpt #current-use .section-grey .container .row .companies li {
+    width: 32%;
+  }
+}
+.jpt #current-use .section-grey .container .row .companies li a {
+  color: #337ab7;
+  text-decoration: none;
+  background-color: transparent;
+}
+.jpt #current-use .section-grey .container .row .companies li a .greydout:hover {
+  opacity: 0.65;
+  transition: 0.05s ease;
+}
+.jpt #architerure .section-white {
+  padding: 5% 0;
+  background: white;
+}
+@media (min-width: 768px) {
+  .jpt #architerure .section-white .container {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(100% - 20px);
+  }
+}
+.jpt #architerure .section-white .container .architecturedescription img.section-icon {
+  max-width: 60px;
+  max-height: 60px;
+  margin: 0 auto !important;
+}
+.jpt #architerure .section-white .container .architecturedescription .section-icon {
+  display: block;
+}
+.jpt #architerure .section-white .container .architecturedescription .section-header {
+  margin: 12px auto 8px;
+  text-align: center;
+}
+.jpt #architerure .section-white .container .architecturedescription .support-paragraph {
+  font-size: 15px;
+  line-height: 1.25;
+  margin-top: 16px;
+  text-align: center;
+}
+.jpt #architerure .section-white .container .architecturecontent {
+  padding-top: 40px;
+}
+.jpt #architerure .section-white .container .architecturecontent .card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 300px;
+  text-align: center;
+  display: flex;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 992px) {
+  .jpt #architerure .section-white .container .architecturecontent .card {
+    width: 300px;
+  }
+}
+.jpt #architerure .section-white .container .architecturecontent .card .arcfeature {
+  width: 100%;
+  height: 100%;
+}
+.jpt #architerure .section-white .container .architecturecontent .card .arcfeature img {
+  vertical-align: middle;
+  width: 100%;
+}
+.jpt #architerure .section-white .container .architecturecontent .card .arcfeature .front {
+  text-align: center;
+  margin-left: 12px;
+}
+@media (min-width: 992px) {
+  .jpt #architerure .section-white .container .architecturecontent .card .arcfeature .front {
+    max-width: 275px;
+  }
+}
+.jpt #architerure .section-white .container .architecturecontent .card .arcfeature .front bt,
+.jpt #architerure .section-white .container .architecturecontent .card .arcfeature .front bt1,
+.jpt #architerure .section-white .container .architecturecontent .card .arcfeature .front bt2 {
+  cursor: default;
+}
+.jpt #architerure .section-white .container .architecturecontent .card .arcfeature .front img {
+  margin-bottom: 40px;
+}
+.jpt #architerure .section-white .container .architecturecontent .card .arcfeature .front a {
+  color: white;
+  text-decoration: none;
+}
+.jpt #architerure .section-white .container .architecturecontent .card .arcfeature .front .arc-button {
+  background-color: #8D8D8D;
+  border-radius: 2px;
+  font-size: 20px;
+  padding: 8px 26px;
+}
+.jpt .footer {
+  background-color: #979797;
+}
+@media (max-width: 768px) {
+  .jpt .footer {
+    text-align: center;
+  }
+}
+.jpt .footer li {
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+}
+.jpt .footer li::after {
+  content: " |";
+}
+.jpt .footer li:nth-last-child::after {
+  content: '' !important;
+}
+.jpt .footer a {
+  color: white;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .jpt .footer a {
+    text-align: center;
+  }
+}
+.jpt .footer p {
+  color: white;
+  padding-top: 10px;
+}
+@media (min-width: 992px) {
+  .jpt .footer p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.375;
+  }
+}
+@media (max-width: 768px) {
+  .jpt .footer p {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .jpt .footer .container {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(100% - 20px);
+  }
+}
+@media (min-width: 768px) {
+  .jpt .footer .navbar-text {
+    float: left;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+.jpt .footer .navbar-text .footer-text {
+  font-size: 16px;
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+@media (min-width: 992px) {
+  .jpt .footer .follow {
+    float: right;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .jpt .footer .follow {
+    text-align: center;
+  }
+}
+.jpt .footer .follow .github-button {
+  user-select: none;
+  cursor: pointer;
+  background-image: linear-gradient(to bottom, #fafbfc, #e4ebf0);
+  background-repeat: repeat-x;
+  background-size: 110% 110%;
+  color: #24292e;
+  vertical-align: middle;
+  text-decoration: none;
+  white-space: nowrap;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 18px;
+  display: inline-block;
+  height: 18px;
+  margin-bottom: 5px;
+  padding: 0 5px;
+  outline: 0;
+  border: 1px solid #d1d2d3;
+  border-radius: 0.25em;
+  box-sizing: content-box;
+  background-color: #eff3f6;
+}
+.jpt .footer .follow .github-button span {
+  vertical-align: middle;
+}

@@ -13,6 +13,11 @@
         <link rel="stylesheet" href="components/base/base.css">
         <script src="components/base/core.min.js"></script>
         <script src="components/base/script.js"></script>
+        <style type="text/css">
+            html {
+                 scroll-behavior: smooth;
+            }
+        </style>
     </head>
     <body>
         <div class="page">
@@ -31,57 +36,22 @@
                         <div class="navbar-spacer"></div>
                         <div class="navbar-cell navbar-sidebar">
                             <ul class="navbar-navigation rd-navbar-nav">
-                                <li class="navbar-navigation-root-item active"><a class="navbar-navigation-root-link"
+                                <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link"
                                         href="index.html">Home</a>
                                 </li>
-                                <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="academics.html">Academics</a>
+                                <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="#H&C">H&C</a>
                                 </li>
-                                <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="history.html">History</a>
+                                <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="#J&J">J&J</a>
                                 </li>
-                                <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="tutors.html">Tutors</a>
-                                    <ul class="navbar-navigation-dropdown rd-navbar-dropdown">
-                                        <li class="navbar-navigation-back">
-                                            <button class="navbar-navigation-back-btn">Back</button>
-                                        </li>
-                                        <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link"
-                                                href="team-member.html">Team member</a>
-                                        </li>
-                                    </ul>
+                                <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="#b&p">Bootstrap</a>
                                 </li>
-                                <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="blog.html">Blog</a>
-                                    <ul class="navbar-navigation-dropdown rd-navbar-dropdown">
-                                        <li class="navbar-navigation-back">
-                                            <button class="navbar-navigation-back-btn">Back</button>
-                                        </li>
-                                        <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link"
-                                                href="single-post.html">Single post</a>
-                                        </li>
-                                    </ul>
+                                <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="#a&y">ability</a>
                                 </li>
-                                <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="#">Pages</a>
-                                    <ul class="navbar-navigation-dropdown rd-navbar-dropdown">
-                                        <li class="navbar-navigation-back">
-                                            <button class="navbar-navigation-back-btn">Back</button>
-                                        </li>
-                                        <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link"
-                                                href="gallery.html">Gallery</a>
-                                        </li>
-                                        <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link"
-                                                href="404.html">404</a>
-                                        </li>
-                                        <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link"
-                                                href="coming-soon.html">Coming soon</a>
-                                        </li>
-                                        <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link"
-                                                href="privacy-policy.html">Privacy policy</a>
-                                        </li>
-                                        <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link"
-                                                href="search-results.html">Search results</a>
-                                        </li>
-                                    </ul>
+                                <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="#H5&C3">H5&C3</a>
                                 </li>
-                                <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="contact-us.html">Contact
-                                        us</a>
+                                <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="#E&S6">ES6</a>
+                                </li>
+                                <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="#V&ue">Vue</a>
                                 </li>
                             </ul>
                         </div>
@@ -91,7 +61,7 @@
                                 <div class="navbar-subpanel-item">
                                     <div class="navbar-search">
                                         <div class="navbar-search-container">
-                                            <form class="navbar-search-form" action="search-results.html" method="GET"
+                                            <form class="navbar-search-form" action="results.html" method="GET"
                                                 data-rd-search='{"output":".navbar-search-results","mode":"live","liveResults":3,"template":"<h5 class=\"search-title\"><a target=\"_top\" href=\"#{href}\" class=\"search-link\">#{title}</a></h5><p>...#{token}...</p>"}'>
                                                 <input class="navbar-search-input" type="text" placeholder="Enter search terms..."
                                                     autocomplete="off" name="s" />
@@ -120,7 +90,7 @@
                                 <div class="col-md-9 col-lg-7">
                                     <h1>Welcome To My Space<br />欢迎来到我的个人空间</h1>
                                     <p class="big">在今天和明天之间，有一段很长的时间；趁你还有精神的时候，学习迅速办事。——歌德</p><a class="btn btn-primary"
-                                        href="academics.html">Learn more</a>
+                                        href="#">Learn more</a>
                                 </div>
                             </div>
                         </div>
@@ -131,7 +101,7 @@
                                 <div class="col-md-9 col-lg-7">
                                     <h1>/谈论开发/</h1>
                                     <p class="big">软件开发往往是这样：最开始的90%代码占用了开始的90%的开发时间；剩下10%代码同样需要90%的开发时间。——TomCargill</p><a
-                                        class="btn btn-primary" href="academics.html">Learn more</a>
+                                        class="btn btn-primary" href="#">Learn more</a>
                                 </div>
                             </div>
                         </div>
@@ -142,7 +112,7 @@
                                 <div class="col-md-9 col-lg-7">
                                     <h1>/谈论编码/</h1>
                                     <p class="big">作为一个程序员，郁闷的事情是，面对一个代码块，却不敢去修改。更糟糕的是，这个代码块还是自己写的。——PeytonJones</p><a
-                                        class="btn btn-primary" href="academics.html">Learn more</a>
+                                        class="btn btn-primary" href="#">Learn more</a>
                                 </div>
                             </div>
                         </div>
@@ -151,14 +121,13 @@
                 <!-- Pagination-->
                 <div class="swiper-pagination"></div>
             </section>
-
             <!-- Blurb default-->
-            <section class="section-md bg-transparent text-center">
+            <section class="section-md bg-transparent text-center" id="H&C">
                 <div class="container">
                     <div class="text-block text-block-1" data-animate='{"class":"fadeIn"}'>
                         <h5 class="text-primary">小试牛刀</h5>
-                        <h2>HTML & css</h2>
-                        <p class="big">初学HTML于css的作品</p>
+                        <h2>HTML & CSS</h2>
+                        <p class="big">初学HTML与CSS的作品</p>
                     </div>
                     <div class="row row-30 justify-content-center">
                         <div class="col-sm-6 col-md-4">
@@ -200,7 +169,7 @@
                 </div>
             </section>
             <!-- Price box-->
-            <section class="section-md bg-300 text-center">
+            <section class="section-md bg-300 text-center" id="J&J">
                 <div class="container">
                     <div class="text-block text-block-1" data-animate='{"class":"fadeIn"}'>
                         <h2>JavaScript & JQuery</h2>
@@ -277,7 +246,7 @@
                 </div>
             </section>
             <!-- Person side-->
-            <section class="section-md bg-transparent text-center">
+            <section class="section-md bg-transparent text-center" id="b&p">
                 <div class="container">
                     <div class="text-block text-block-1" data-animate='{"class":"fadeIn"}'>
                         <h5 class="text-primary">进阶</h5>
@@ -285,106 +254,40 @@
                         <p class="big">Bootstrap是Twitter推出的一个用于前端开发的开源工具包。它由Twitter的设计师Mark Otto和Jacob
                             Thornton合作开发,是一个CSS/HTML框架。目前,Bootstrap最新版本为3.0 ...</p>
                     </div>
-                    <div class="row row-30 row-lg-60">
-                        <div class="col-xs-6 col-lg-4">
-                            <!-- Person side-->
-                            <div class="person person-side" data-animate='{"class":"fadeInUp"}'>
-                                <div class="person-media"><img class="person-img" src="images/person-01-135x135.jpg"
-                                        alt="" width="135" height="135" />
-                                </div>
-                                <div class="person-body">
-                                    <div class="person-title h6"><a href="team-member.html">Leslie Alexander</a></div>
-                                    <div class="person-meta">Tutor</div>
-                                    <div class="person-text">Leslie joined our team in 2010 as a marketing tutor.</div>
-                                    <div class="person-social social"><a class="icon social-icon custom-font-facebook"
-                                            href="#"></a><a class="icon social-icon custom-font-twitter" href="#"></a><a
-                                            class="icon social-icon custom-font-linkedin" href="#"></a>
-                                    </div>
+                    <div class="row row-30 justify-content-center">
+                        <div class="col-xs-8 col-sm-6 col-md-4">
+                            <!-- Post event-->
+                            <div class="post post-event" data-animate='{"class":"fadeInUp","delay":".15s"}'><a class="post-media"
+                                    href="NewJupyter/index.html"><img class="post-img" src="images/NewJupyter.png" alt=""
+                                        width="370" height="240" />
+                                </a>
+                                <div class="post-heading h4">
+                                    <div class="post-title"><a href="NewJupyter/index.html">New Jupyter</a></div>
+                                    <div class="post-price"><a href="NewJupyter/index.html">纽约市</a></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-6 col-lg-4">
-                            <!-- Person side-->
-                            <div class="person person-side" data-animate='{"class":"fadeInUp","delay":".15s"}'>
-                                <div class="person-media"><img class="person-img" src="images/person-02-135x135.jpg"
-                                        alt="" width="135" height="135" />
-                                </div>
-                                <div class="person-body">
-                                    <div class="person-title h6"><a href="team-member.html">Cameron Williamson</a></div>
-                                    <div class="person-meta">Course assistant</div>
-                                    <div class="person-text">Cameron helps Teachzy team with online programs.</div>
-                                    <div class="person-social social"><a class="icon social-icon custom-font-facebook"
-                                            href="#"></a><a class="icon social-icon custom-font-twitter" href="#"></a><a
-                                            class="icon social-icon custom-font-linkedin" href="#"></a>
-                                    </div>
+                        <div class="col-xs-8 col-sm-6 col-md-4">
+                            <!-- Post event-->
+                            <div class="post post-event" data-animate='{"class":"fadeInUp","delay":".15s"}'><a class="post-media"
+                                    href="ZeroCloud/index.html"><img class="post-img" src="images/ZeroCloud.png" alt=""
+                                        width="370" height="240" />
+                                </a>
+                                <div class="post-heading h4">
+                                    <div class="post-title"><a href="ZeroCloud/index.html">Zero Cloud</a></div>
+                                    <div class="post-price"><a href="ZeroCloud/index.html">零云服务商</a></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-6 col-lg-4">
-                            <!-- Person side-->
-                            <div class="person person-side" data-animate='{"class":"fadeInUp","delay":".3s"}'>
-                                <div class="person-media"><img class="person-img" src="images/person-03-135x135.jpg"
-                                        alt="" width="135" height="135" />
-                                </div>
-                                <div class="person-body">
-                                    <div class="person-title h6"><a href="team-member.html">Theresa Webb</a></div>
-                                    <div class="person-meta">Lead tutor</div>
-                                    <div class="person-text">Theresa is one of our best foreign language tutors.</div>
-                                    <div class="person-social social"><a class="icon social-icon custom-font-facebook"
-                                            href="#"></a><a class="icon social-icon custom-font-twitter" href="#"></a><a
-                                            class="icon social-icon custom-font-linkedin" href="#"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-6 col-lg-4">
-                            <!-- Person side-->
-                            <div class="person person-side" data-animate='{"class":"fadeInUp"}'>
-                                <div class="person-media"><img class="person-img" src="images/person-04-135x135.jpg"
-                                        alt="" width="135" height="135" />
-                                </div>
-                                <div class="person-body">
-                                    <div class="person-title h6"><a href="team-member.html">Jacob Jones</a></div>
-                                    <div class="person-meta">Program coordinator</div>
-                                    <div class="person-text">Jacob coordinates most of our programs &amp; courses.</div>
-                                    <div class="person-social social"><a class="icon social-icon custom-font-facebook"
-                                            href="#"></a><a class="icon social-icon custom-font-twitter" href="#"></a><a
-                                            class="icon social-icon custom-font-linkedin" href="#"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-6 col-lg-4">
-                            <!-- Person side-->
-                            <div class="person person-side" data-animate='{"class":"fadeInUp","delay":".15s"}'>
-                                <div class="person-media"><img class="person-img" src="images/person-05-135x135.jpg"
-                                        alt="" width="135" height="135" />
-                                </div>
-                                <div class="person-body">
-                                    <div class="person-title h6"><a href="team-member.html">Brooklyn Simmons</a></div>
-                                    <div class="person-meta">Professor</div>
-                                    <div class="person-text">Brooklyn is our leading management tutor.</div>
-                                    <div class="person-social social"><a class="icon social-icon custom-font-facebook"
-                                            href="#"></a><a class="icon social-icon custom-font-twitter" href="#"></a><a
-                                            class="icon social-icon custom-font-linkedin" href="#"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-6 col-lg-4">
-                            <!-- Person side-->
-                            <div class="person person-side" data-animate='{"class":"fadeInUp","delay":".3s"}'>
-                                <div class="person-media"><img class="person-img" src="images/person-06-135x135.jpg"
-                                        alt="" width="135" height="135" />
-                                </div>
-                                <div class="person-body">
-                                    <div class="person-title h6"><a href="team-member.html">Wade Warren</a></div>
-                                    <div class="person-meta">Tutor</div>
-                                    <div class="person-text">Wade is an author of Web Tehcnology programs.</div>
-                                    <div class="person-social social"><a class="icon social-icon custom-font-facebook"
-                                            href="#"></a><a class="icon social-icon custom-font-twitter" href="#"></a><a
-                                            class="icon social-icon custom-font-linkedin" href="#"></a>
-                                    </div>
+                        <div class="col-xs-8 col-sm-6 col-md-4">
+                            <!-- Post event-->
+                            <div class="post post-event" data-animate='{"class":"fadeInUp","delay":".3s"}'><a class="post-media"
+                                    href="Model/index.html"><img class="post-img" src="images/Model.png" alt=""
+                                        width="370" height="240" />
+                                </a>
+                                <div class="post-heading h4">
+                                   <div class="post-title"><a href="Model/index.html">Model</a></div>
+                                   <div class="post-price"><a href="Model/index.html">模特网</a></div>
                                 </div>
                             </div>
                         </div>
@@ -392,13 +295,13 @@
                 </div>
             </section>
             <!-- Counters-->
-            <section class="section-lg bg-primary bg-image-wrap context-dark text-center text-md-left">
+            <section class="section-lg bg-primary bg-image-wrap context-dark text-center text-md-left" id="a&y">
                 <div class="bg-image-wrap-item bg-image" style="background-image:url(images/image-05-875x705.jpg);"></div>
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-7">
                             <div class="pr-xxl-5">
-                                <h2>/能力掌握/</h2>
+                                <h2>/开发能力掌握/</h2>
                                 <p class="big">对于一个前端开发工作人员,熟练掌握技能是相当必要的</p>
                                 <div class="row row-30 row-lg-55">
                                     <div class="col-6 col-sm-3 col-md-6">
@@ -502,7 +405,7 @@
                 </div>
             </section>
             <!-- Post event-->
-            <section class="section-md bg-transparent text-center">
+            <section class="section-md bg-transparent text-center" id="H5&C3">
                 <div class="container">
                     <div class="text-block text-block-1" data-animate='{"class":"fadeIn"}'>
                         <h5 class="text-primary">更新迭代</h5>
@@ -512,78 +415,37 @@
                     <div class="row row-30 justify-content-center">
                         <div class="col-xs-8 col-sm-6 col-md-4">
                             <!-- Post event-->
-                            <div class="post post-event" data-animate='{"class":"fadeInUp"}'><a class="post-media" href="single-post.html"><img
-                                        class="post-img" src="images/image-06-370x240.jpg" alt="" width="370" height="240" />
-                                    <div class="post-date">
-                                        <div class="post-day">19</div>
-                                        <div class="post-month">Sep</div>
-                                    </div>
+                            <div class="post post-event" data-animate='{"class":"fadeInUp","delay":".15s"}'><a class="post-media"
+                                    href="Heart/index.html"><img class="post-img" src="images/Heart.png" alt=""
+                                        width="370" height="240" />
                                 </a>
                                 <div class="post-heading h4">
-                                    <div class="post-title"><a href="single-post.html">Creative Day</a></div>
-                                    <div class="post-price">$20</div>
-                                </div>
-                                <div class="post-meta post-meta-vertical big">
-                                    <div class="post-meta-item">
-                                        <div class="post-meta-icon custom-font-clock"></div>
-                                        <div class="post-time">12:00 am - 2:00 pm</div>
-                                    </div>
-                                    <div class="post-meta-item">
-                                        <div class="post-meta-icon custom-font-pin"></div>
-                                        <div class="post-location">Cambridge, MA 02138, USA</div>
-                                    </div>
+                                    <div class="post-title"><a href="Heart/index.html">Heart For you</a></div>
+                                    <div class="post-price"><a href="Heart/index.html">字面意思</a></div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xs-8 col-sm-6 col-md-4">
                             <!-- Post event-->
                             <div class="post post-event" data-animate='{"class":"fadeInUp","delay":".15s"}'><a class="post-media"
-                                    href="single-post.html"><img class="post-img" src="images/image-07-370x240.jpg" alt=""
+                                    href="Hexagon gradient/index.html"><img class="post-img" src="images/Hexagon%20gradient.png" alt=""
                                         width="370" height="240" />
-                                    <div class="post-date">
-                                        <div class="post-day">21</div>
-                                        <div class="post-month">Sep</div>
-                                    </div>
                                 </a>
                                 <div class="post-heading h4">
-                                    <div class="post-title"><a href="single-post.html">Poetry Event</a></div>
-                                    <div class="post-price">$15</div>
-                                </div>
-                                <div class="post-meta post-meta-vertical big">
-                                    <div class="post-meta-item">
-                                        <div class="post-meta-icon custom-font-clock"></div>
-                                        <div class="post-time">11:00 am - 1:00 pm</div>
-                                    </div>
-                                    <div class="post-meta-item">
-                                        <div class="post-meta-icon custom-font-pin"></div>
-                                        <div class="post-location">233 Main St. New York United States</div>
-                                    </div>
+                                    <div class="post-title"><a href="Hexagon gradient/index.html">Hexagon gradient</a></div>
+                                    <div class="post-price"><a href="Hexagon gradient/index.html">渐变六边形</a></div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xs-8 col-sm-6 col-md-4">
                             <!-- Post event-->
                             <div class="post post-event" data-animate='{"class":"fadeInUp","delay":".3s"}'><a class="post-media"
-                                    href="single-post.html"><img class="post-img" src="images/image-08-370x240.jpg" alt=""
+                                    href="Rotating cube/index.html"><img class="post-img" src="images/Rotating%20cube.png" alt=""
                                         width="370" height="240" />
-                                    <div class="post-date">
-                                        <div class="post-day">26</div>
-                                        <div class="post-month">Sep</div>
-                                    </div>
                                 </a>
                                 <div class="post-heading h4">
-                                    <div class="post-title"><a href="single-post.html">Undergraduate Day</a></div>
-                                    <div class="post-price">Free</div>
-                                </div>
-                                <div class="post-meta post-meta-vertical big">
-                                    <div class="post-meta-item">
-                                        <div class="post-meta-icon custom-font-clock"></div>
-                                        <div class="post-time">1:00 pm - 11:59 pm</div>
-                                    </div>
-                                    <div class="post-meta-item">
-                                        <div class="post-meta-icon custom-font-pin"></div>
-                                        <div class="post-location">Cambridge, MA 02138, USA</div>
-                                    </div>
+                                   <div class="post-title"><a href="Rotating cube/index.html">Rotating Cube</a></div>
+                                   <div class="post-price"><a href="Rotating cube/index.html">旋转立方体</a></div>
                                 </div>
                             </div>
                         </div>
@@ -591,7 +453,7 @@
                 </div>
             </section>
             <!-- Testimonials-->
-            <section class="section-md bg-300 text-center">
+            <section class="section-md bg-300 text-center" id="E&S6">
                 <div class="container">
                     <div class="text-block text-block-1" data-animate='{"class":"fadeIn"}'>
                         <h2>ES6</h2>
@@ -600,16 +462,16 @@
                     </div>
                     <div class="slick-person-container">
                         <div class="slick-slider slick-person-img slider-nav" data-slick='{"slidesToShow":3,"arrows":false,"asNavFor":".slider-for","focusOnSelect":true,"centerMode":true,"centerPadding":"0px"}'>
-                            <div class="slick-content"><img src="images/person-11-135x135.jpg" alt="" width="135"
+                            <div class="slick-content"><img src="images/SwiperCheck.png" alt="" width="135"
                                     height="135" />
                             </div>
-                            <div class="slick-content"><img src="images/person-07-135x135.jpg" alt="" width="135"
+                            <div class="slick-content"><img src="images/Epidemic%20Situation.png" alt="" width="135"
                                     height="135" />
                             </div>
-                            <div class="slick-content"><img src="images/person-10-135x135.jpg" alt="" width="135"
+                            <div class="slick-content"><img src="images/BadMoon.png" alt="" width="135"
                                     height="135" />
                             </div>
-                            <div class="slick-content"><img src="images/person-08-135x135.jpg" alt="" width="135"
+                            <div class="slick-content"><img src="images/UpLoad.png" alt="" width="135"
                                     height="135" />
                             </div>
                         </div>
@@ -617,41 +479,37 @@
                             <div class="slick-content">
                                 <!-- Quote-->
                                 <blockquote class="quote quote-simple">
-                                    <q class="quote-text">My overall experience in Teachzy was amazing. The best part
-                                        is to get to know people from a lot of different places, learn about different
-                                        cultures and make friends for life!</q>
-                                    <cite class="quote-cite h6">Peter Fletcher</cite>
-                                    <div class="quote-meta">Student</div>
+                                    <a href="Swiper Check/index.html">
+                                        <cite class="quote-cite h6">Swiper Check</cite>
+                                        <div class="quote-meta">滑动认证</div>
+                                    </a>
                                 </blockquote>
                             </div>
                             <div class="slick-content">
                                 <!-- Quote-->
                                 <blockquote class="quote quote-simple">
-                                    <q class="quote-text">This university was an exceptional and international
-                                        experience for me. It did not only advance my studies and knowledge but even
-                                        gave me the chance to make friends across the globe.</q>
-                                    <cite class="quote-cite h6">Jenny Wilson</cite>
-                                    <div class="quote-meta">Student</div>
+                                    <a href="Epidemic Situation/index.html">
+                                        <cite class="quote-cite h6">Epidemic Situation</cite>
+                                        <div class="quote-meta">疫情播报</div>
+                                    </a>
                                 </blockquote>
                             </div>
                             <div class="slick-content">
                                 <!-- Quote-->
                                 <blockquote class="quote quote-simple">
-                                    <q class="quote-text">I made friends from countries all over the world. That’s
-                                        really amazing! And Teachzy is just like a quiet oasis in the crowded city,
-                                        it’s really pleasant to study and live here.</q>
-                                    <cite class="quote-cite h6">John Adams</cite>
-                                    <div class="quote-meta">Student</div>
+                                    <a href="Bad Mood/index.html">
+                                        <cite class="quote-cite h6">Bad Mood</cite>
+                                        <div class="quote-meta">毒鸡汤</div>
+                                    </a>
                                 </blockquote>
                             </div>
                             <div class="slick-content">
                                 <!-- Quote-->
                                 <blockquote class="quote quote-simple">
-                                    <q class="quote-text">I've been working at Teachzy for over 20 years. As a tutor I
-                                        love interacting with students and share my knowledge. Here you can definitely
-                                        make connections for life!</q>
-                                    <cite class="quote-cite h6">Esther Howard</cite>
-                                    <div class="quote-meta">Professor</div>
+                                    <a href="Upload/index.html">
+                                        <cite class="quote-cite h6">Upload</cite>
+                                        <div class="quote-meta">图片上传</div>
+                                    </a>
                                 </blockquote>
                             </div>
                         </div>
@@ -659,7 +517,7 @@
                 </div>
             </section>
             <!-- Blog-->
-            <section class="section-md bg-transparent">
+            <section class="section-md bg-transparent" id="V&ue">
                 <div class="container">
                     <div class="text-block text-block-1 text-center" data-animate='{"class":"fadeIn"}'>
                         <h5 class="text-primary">目前阶段</h5>
@@ -670,8 +528,8 @@
                     <div class="row row-30 justify-content-center">
                         <div class="col-xs-10 col-sm-6">
                             <!-- Post-->
-                            <div class="post" data-animate='{"class":"fadeIn"}'><a class="post-media" href="single-post.html"><img
-                                        class="post-img" src="images/image-09-570x380.jpg" alt="" width="570" height="380" /></a>
+                            <div class="post" data-animate='{"class":"fadeIn"}'><a class="post-media" href="https://cn.vuejs.org/v2/guide"><img
+                                        class="post-img" src="images/vue.jpg" alt="" width="570" height="380" /></a>
                                 <div class="post-meta">
                                     <div class="post-meta-item">
                                         <div class="post-meta-icon custom-font-calendar"></div>
@@ -692,20 +550,8 @@
                             <h5 class="text-primary">Popular</h5>
                             <!-- Post-->
                             <div class="post" data-animate='{"class":"fadeInUp"}'>
-                                <div class="post-meta">
-                                    <div class="post-meta-item">
-                                        <div class="post-meta-icon custom-font-calendar"></div>
-                                        <div class="post-date">April 23, 2020</div>
-                                    </div>
-                                    <div class="post-meta-item">
-                                        <div class="post-meta-icon custom-font-message-circle"></div>
-                                        <div class="post-comment">3 comment(s)</div>
-                                    </div>
-                                </div>
-                                <div class="post-title h6"><a href="single-post.html">Studying in the United States</a></div>
-                                <div class="post-text">International students increasingly want to come to the United
-                                    States for college or graduate school. Use our tips, rankings, and more to help you
-                                    find the best school for you.</div>
+                                <div class="post-title h6"><a href="UecTea/index.html">UEC饮品 (app)</a></div>
+                                <div class="post-text">此项目是一个饮品app，使用者可以在app上面选择喜欢的饮品下单，登陆，修改个人信息，收藏等</div>
                             </div>
                             <!-- Post-->
                             <div class="post" data-animate='{"class":"fadeInUp"}'>
@@ -820,7 +666,7 @@
                     <div class="container">
                         <!-- Copyright-->
                         <p class="rights"><span>&copy; 2020&nbsp;</span><span>Study</span><span>. All rights
-                                reserved.&nbsp;</span><a class="link link-inherit" href="privacy-policy.html">Privacy
+                                reserved.&nbsp;</span><a class="link link-inherit" href="javascript:;">Privacy
                                 Policy</a></p>
                     </div>
                 </div>

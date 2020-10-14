@@ -1,0 +1,245 @@
+h2{
+	font-size: 18px;
+}
+
+body {
+  font-size: 12px;
+}
+li {
+  list-style: none;
+}
+.civil .row .box {
+  height: 100%;
+  text-align: center;
+  margin: 20px 0;
+  border-right: 1px #ccc solid;
+}
+.civil .row .box h4 {
+  font-size: 14px;
+  font-weight: 700;
+}
+.civil .row .box h2 {
+  color: red;
+  margin: 0;
+}
+.civil .row .box p {
+  color: #ccc;
+}
+.civil .row .box p span {
+  color: #f55b23;
+}
+.civil .civil_details table {
+  text-align: center;
+  border-collapse: collapse;
+  width: 100%;
+}
+.civil .civil_details table tr {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.civil .civil_details table tr th {
+  text-align: center;
+}
+.civil .civil_details .btn-lis button {
+  border: none;
+  background-color: rgba(226, 222, 222, 0.5);
+  -webkit-border-radius: 15px;
+     -moz-border-radius: 15px;
+          border-radius: 15px;
+  width: 100%;
+  margin: 5px 0;
+}
+.civil .civil_details .btn-lis button > ul {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  min-height: 40px;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.civil .civil_details .btn-lis button > ul li {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+     -moz-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  list-style: none;
+}
+.civil .civil_details .btn-lis button > ul .caret {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateX(-50%);
+     -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+       -o-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.civil .civil_details .btn-lis .ul-hide {
+  position: static;
+  border: none;
+  width: 100%;
+}
+.civil .civil_details .btn-lis .ul-hide > li {
+  height: 100%;
+  width: 100%;
+}
+.civil .civil_details .btn-lis .ul-hide > li ul {
+  padding: 0;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.civil .civil_details .btn-lis .ul-hide > li ul li {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+     -moz-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.overseas .overseas_details table {
+  text-align: center;
+  border-collapse: collapse;
+  width: 100%;
+}
+.overseas .overseas_details table tr {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.overseas .overseas_details table tr th {
+  text-align: center;
+}
+.overseas .overseas_details .btn-lis button {
+  border: none;
+  background-color: rgba(226, 222, 222, 0.5);
+  -webkit-border-radius: 15px;
+     -moz-border-radius: 15px;
+          border-radius: 15px;
+  width: 100%;
+  margin: 5px 0;
+}
+.overseas .overseas_details .btn-lis button > ul {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  min-height: 40px;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.overseas .overseas_details .btn-lis button > ul li {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+     -moz-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  list-style: none;
+}
+.overseas .overseas_details .btn-lis button > ul .caret {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateX(-50%);
+     -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+       -o-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.overseas .overseas_details .btn-lis .ul-hide {
+  position: static;
+  border: none;
+  width: 100%;
+}
+.overseas .overseas_details .btn-lis .ul-hide > li {
+  height: 100%;
+  width: 100%;
+}
+.overseas .overseas_details .btn-lis .ul-hide > li ul {
+  padding: 0;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.overseas .overseas_details .btn-lis .ul-hide > li ul li {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+     -moz-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+/*# sourceMappingURL=./style.css.map */
