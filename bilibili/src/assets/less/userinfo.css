@@ -1,0 +1,101 @@
+.userinfo .userinfo-nav .logo-box {
+  width: 60px;
+  height: 28px;
+  line-height: 46px;
+}
+.userinfo .userinfo-nav .van-nav-bar__right {
+  padding-left: 0;
+}
+.userinfo .userinfo-nav .head-portrait {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.userinfo .userinfo-nav .van-search {
+  padding: 0 16px;
+}
+.userinfo .space .banner .banner-box {
+  height: 90px;
+  background-image: url(../img/bannerTop_new.png);
+  background-size: cover;
+  background-position: 50%;
+}
+.userinfo .space .avatar .part1 {
+  padding: 0 12px;
+  height: 84px;
+}
+.userinfo .space .avatar .part1 .face {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: -8px;
+}
+.userinfo .space .avatar .part1 .relation {
+  padding-top: 8px;
+  width: calc(100vw - 158px);
+}
+.userinfo .space .avatar .part1 .relation .relation-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.userinfo .space .avatar .part1 .relation .relation-box .fans,
+.userinfo .space .avatar .part1 .relation .relation-box .follow,
+.userinfo .space .avatar .part1 .relation .relation-box .likes {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+.userinfo .space .avatar .part1 .relation .relation-box .fans .num,
+.userinfo .space .avatar .part1 .relation .relation-box .follow .num,
+.userinfo .space .avatar .part1 .relation .relation-box .likes .num {
+  font-size: 14px;
+  color: #212121;
+}
+.userinfo .space .avatar .part1 .relation .relation-box .fans .type,
+.userinfo .space .avatar .part1 .relation .relation-box .follow .type,
+.userinfo .space .avatar .part1 .relation .relation-box .likes .type {
+  font-size: 12px;
+  color: #999999;
+}
+.userinfo .space .avatar .part1 .relation .relation-box .split {
+  vertical-align: middle;
+  width: 1px;
+  height: 4.26667vw;
+  background: #e7e7e7;
+}
+.userinfo .space .avatar .part1 .edit-btn {
+  height: 30px;
+}
+.userinfo .space .avatar .part1 .edit-btn .van-button {
+  width: 100%;
+  height: 30px;
+  margin-top: 12px;
+}
+.userinfo .space .avatar .part2 {
+  padding: 12px;
+}
+.userinfo .space .avatar .part2 .base {
+  padding-bottom: 8px;
+}
+.userinfo .space .avatar .part2 .base .name {
+  font-weight: bold;
+  font-size: 18px;
+  padding-left: 6px;
+}
+.userinfo .space .avatar .part2 .desc .content {
+  color: #999999;
+  padding-left: 6px;
+  font-size: 14px;
+}
+.userinfo .space .avatar .tabs .van-tabs__line {
+  background-color: #fb7299;
+}
+.userinfo .space .avatar .tabs .van-tab--active {
+  color: #fb7299;
+}
