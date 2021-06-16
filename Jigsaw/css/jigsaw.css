@@ -11,7 +11,7 @@
     background: lightblue;
     display: flex;
     flex-wrap: wrap;
-    margin: 100px auto;
+    margin: 0 auto;
     position: relative;
 }
 
